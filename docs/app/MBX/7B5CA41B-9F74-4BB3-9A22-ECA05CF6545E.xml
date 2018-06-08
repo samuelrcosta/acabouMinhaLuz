@@ -1,0 +1,30 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="7B5CA41B-9F74-4BB3-9A22-ECA05CF6545E" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="3">
+    <control controlID="FC99FDEC-1480-48E7-8B4F-143DDEE82C5D" controlTypeID="ContentPanel" x="0" y="0" w="360" h="572" zOrder="0">
+      <groupChildrenDescriptors>
+        <control controlID="E158259B-4343-415C-BF7B-2009F57395D5" controlTypeID="ScrollArea" x="0" y="0" w="360" h="572" zOrder="0">
+          <caption>ListaReclamacoes</caption>
+          <canMove>False</canMove>
+          <alias>ListaReclamacoes</alias>
+          <groupChildrenDescriptors>
+            <control controlID="8353CE84-E50F-43D1-B500-FD79A878E9F9" controlTypeID="ScrollViewPort" x="0" y="0" w="300" h="300" zOrder="0">
+              <caption>ScrollViewPort</caption>
+              <alias>viewPort</alias>
+              <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+                <link targetPageID="E902EEAD-6CA6-4F63-A54B-6CDD2C7E6940" linkType="ltIncludePage" isApplyIncludePage="True" title="Link">
+                  <area shape="0" alt="" ID="{4BC04794-0F85-44C0-9520-CC80FDF714CA}" coords="(0,0,300,300)"/>
+                </link>
+              </links>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

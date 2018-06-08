@@ -1,0 +1,33 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="FC1B3D44-BD74-441A-85F7-DF43CB3A31A4" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="2">
+    <control controlID="378F2272-F566-4BF4-8250-8DB7C29EE8C1" controlTypeID="TextArea" x="10" y="62" w="211" h="35" zOrder="0">
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>Perfil+editado+com+sucesso!</text>
+      <textColor>4278229248</textColor>
+      <textAlign>HaCenter</textAlign>
+      <textStyles>[fsBold]</textStyles>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="F53649F1-49A1-40A5-A6D9-1EB180A786D3" controlTypeID="Button" x="64" y="128" w="105" h="38" zOrder="1">
+      <color>4284900966</color>
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="ACEE58F1-94E6-47DB-884A-EDCCC2944543" linkType="ltPageLink" isApplyIncludePage="False" title="Home">
+          <area shape="0" alt="" ID="{7CABC06D-C3A4-4B80-A2D0-9C3278E83DEF}" coords="(0,0,105,38)"/>
+        </link>
+      </links>
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>OK</text>
+      <textColor>4294967295</textColor>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

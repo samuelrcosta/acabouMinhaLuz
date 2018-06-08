@@ -1,0 +1,223 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="ACEE58F1-94E6-47DB-884A-EDCCC2944543" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="14">
+    <control controlID="DB73D151-F51D-4053-80DD-705A5C308A20" controlTypeID="StatusBar(Android)" x="0" y="0" w="360" h="20" zOrder="0"/>
+    <control controlID="E791CBEF-730B-4C7D-9C6F-04DEA5CF9521" controlTypeID="ContentPanel" x="0" y="20" w="360" h="572" zOrder="1">
+      <groupChildrenDescriptors>
+        <control controlID="7132AA48-FB49-43E0-9453-5EC6FA865AA2" controlTypeID="ScrollArea" x="0" y="0" w="360" h="572" zOrder="0">
+          <caption>Mapa</caption>
+          <canMove>False</canMove>
+          <alias>Mapa</alias>
+          <groupChildrenDescriptors>
+            <control controlID="FF587724-7012-4247-B8DC-79A75C14949B" controlTypeID="ScrollViewPort" x="0" y="0" w="300" h="300" zOrder="0">
+              <caption>ScrollViewPort</caption>
+              <alias>viewPort</alias>
+              <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+                <link targetPageID="6128FB65-173E-4580-B436-084401D5E878" linkType="ltIncludePage" isApplyIncludePage="True" title="Link">
+                  <area shape="0" alt="" ID="{FC9AE5B4-1852-44A6-A369-47CA5D8EB8FE}" coords="(0,0,300,300)"/>
+                </link>
+              </links>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="FD707865-625C-495C-BA5A-DA3DA918066D" controlTypeID="ScrollArea" x="0" y="0" w="360" h="572" zOrder="1">
+          <caption>Reclamar</caption>
+          <canMove>False</canMove>
+          <alias>Reclamar</alias>
+          <groupChildrenDescriptors>
+            <control controlID="1556DC34-BC99-4517-9E58-695F74F9129A" controlTypeID="ScrollViewPort" x="0" y="0" w="300" h="300" zOrder="0">
+              <caption>ScrollViewPort</caption>
+              <alias>viewPort</alias>
+              <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+                <link targetPageID="40D39DB4-1D2C-419F-B56E-2A1F4F15CD60" linkType="ltIncludePage" isApplyIncludePage="True" title="Link">
+                  <area shape="0" alt="" ID="{2718282B-C560-4DC6-8CEC-1F1D63EEB666}" coords="(0,0,300,300)"/>
+                </link>
+              </links>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="C059CF36-46C2-49B3-8376-07DAB4E6D234" controlTypeID="ScrollArea" x="0" y="0" w="360" h="572" zOrder="2">
+          <caption>Reclama%C3%A7%C3%B5es</caption>
+          <canMove>False</canMove>
+          <alias>Reclama%C3%A7%C3%B5es</alias>
+          <groupChildrenDescriptors>
+            <control controlID="DBCD4D4C-8157-4D2E-B880-B2F062C0364B" controlTypeID="ScrollViewPort" x="0" y="0" w="300" h="300" zOrder="0">
+              <caption>ScrollViewPort</caption>
+              <alias>viewPort</alias>
+              <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+                <link targetPageID="7B5CA41B-9F74-4BB3-9A22-ECA05CF6545E" linkType="ltIncludePage" isApplyIncludePage="True" title="Link">
+                  <area shape="0" alt="" ID="{ACD7726D-C082-4BEB-B7E9-1BCC107E63D7}" coords="(0,0,300,300)"/>
+                </link>
+              </links>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="819A29A0-12F6-4EA7-9ED6-DECB7E94C6E0" controlTypeID="ScrollArea" x="0" y="0" w="360" h="572" zOrder="3">
+          <caption>Perfil</caption>
+          <canMove>False</canMove>
+          <alias>Perfil</alias>
+          <groupChildrenDescriptors>
+            <control controlID="C193E6AF-28BE-4BA4-AAEB-61E90482DA2B" controlTypeID="ScrollViewPort" x="0" y="0" w="300" h="300" zOrder="0">
+              <caption>ScrollViewPort</caption>
+              <alias>viewPort</alias>
+              <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+                <link targetPageID="B481AF06-BBC0-4E4C-88F9-C2E9838DB7A7" linkType="ltIncludePage" isApplyIncludePage="True" title="Link">
+                  <area shape="0" alt="" ID="{B9523345-C578-4DD1-A43F-5A6904BC1E51}" coords="(0,0,300,300)"/>
+                </link>
+              </links>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+      <canVertScroll>False</canVertScroll>
+    </control>
+    <control controlID="0078A991-3B8A-4933-A94B-884647B380DD" controlTypeID="Tabs" x="0" y="592" w="360" h="48" zOrder="2">
+      <interactiveData>
+        <entry title="Mapa">
+          <area shape="0" alt="" ID="{2D0ADE0B-F9E3-4DDB-BD99-777C956D9C7E}" coords="(0,0,179,48)"/>
+          <events title="">
+            <event eventType="atClick" isChecked="True">
+              <behaviour title="" isChecked="True" isWait="False" isLoop="False" execMode="emParallel">
+                <target targetID="E791CBEF-730B-4C7D-9C6F-04DEA5CF9521" isChecked="True" isAutoRecovery="False" isLoop="False" execMode="emSequence">
+                  <command name="Switch Stack Panel" isChecked="True" descrition="">
+                    <param name="AniInterpolation" value="0" varType="3" description=""/>
+                    <param name="AniDuration" value="200" varType="3" description=""/>
+                    <param name="AniAutoReverse" value="False" varType="11" description=""/>
+                    <param name="AniLoop" value="False" varType="11" description=""/>
+                    <param name="AniInterpolationTypeOut" value="False" varType="11" description=""/>
+                    <param name="Delay" value="0" varType="3" description=""/>
+                    <param name="SelecedIndex" value="0" varType="3" description=""/>
+                  </command>
+                </target>
+                <target targetID="00DC7966-A401-4837-9E52-8BC5C5FD9582" isChecked="True" isAutoRecovery="False" isLoop="False" execMode="emSequence">
+                  <command name="Change Visibility" isChecked="True" descrition="">
+                    <param name="AniInterpolation" value="1" varType="3" description=""/>
+                    <param name="AniDuration" value="200" varType="3" description=""/>
+                    <param name="AniAutoReverse" value="False" varType="11" description=""/>
+                    <param name="AniLoop" value="False" varType="11" description=""/>
+                    <param name="AniInterpolationTypeOut" value="False" varType="11" description=""/>
+                    <param name="Delay" value="0" varType="3" description=""/>
+                    <param name="ValueFromCurrent" value="True" varType="11" description=""/>
+                    <param name="ForceFromInitValue" value="False" varType="11" description=""/>
+                    <param name="ForceSetVisible" value="False" varType="11" description=""/>
+                    <param name="Value" value="0" varType="3" description=""/>
+                    <param name="TerminateLoopByClick" value="True" varType="11" description=""/>
+                  </command>
+                </target>
+                <target targetID="FF79F19D-988C-403D-B4AB-E41FC2AD65B4" isChecked="True" isAutoRecovery="False" isLoop="False" execMode="emSequence">
+                  <command name="Change Visibility" isChecked="True" descrition="">
+                    <param name="AniInterpolation" value="1" varType="3" description=""/>
+                    <param name="AniDuration" value="200" varType="3" description=""/>
+                    <param name="AniAutoReverse" value="False" varType="11" description=""/>
+                    <param name="AniLoop" value="False" varType="11" description=""/>
+                    <param name="AniInterpolationTypeOut" value="False" varType="11" description=""/>
+                    <param name="Delay" value="0" varType="3" description=""/>
+                    <param name="ValueFromCurrent" value="True" varType="11" description=""/>
+                    <param name="ForceFromInitValue" value="False" varType="11" description=""/>
+                    <param name="ForceSetVisible" value="False" varType="11" description=""/>
+                    <param name="Value" value="0" varType="3" description=""/>
+                    <param name="TerminateLoopByClick" value="True" varType="11" description=""/>
+                  </command>
+                </target>
+              </behaviour>
+            </event>
+          </events>
+        </entry>
+        <entry title="Reclama%C3%A7%C3%B5es">
+          <area shape="0" alt="" ID="{213F643B-BB2B-4B85-9CFB-7B9EABD06BEE}" coords="(180,0,359,48)"/>
+          <events title="">
+            <event eventType="atClick" isChecked="True">
+              <behaviour title="" isChecked="True" isWait="False" isLoop="False" execMode="emParallel">
+                <target targetID="E791CBEF-730B-4C7D-9C6F-04DEA5CF9521" isChecked="True" isAutoRecovery="False" isLoop="False" execMode="emSequence">
+                  <command name="Switch Stack Panel" isChecked="True" descrition="">
+                    <param name="AniInterpolation" value="0" varType="3" description=""/>
+                    <param name="AniDuration" value="200" varType="3" description=""/>
+                    <param name="AniAutoReverse" value="False" varType="11" description=""/>
+                    <param name="AniLoop" value="False" varType="11" description=""/>
+                    <param name="AniInterpolationTypeOut" value="False" varType="11" description=""/>
+                    <param name="Delay" value="0" varType="3" description=""/>
+                    <param name="SelecedIndex" value="2" varType="3" description=""/>
+                  </command>
+                </target>
+                <target targetID="00DC7966-A401-4837-9E52-8BC5C5FD9582" isChecked="True" isAutoRecovery="False" isLoop="False" execMode="emSequence">
+                  <command name="Change Visibility" isChecked="True" descrition="">
+                    <param name="AniInterpolation" value="1" varType="3" description=""/>
+                    <param name="AniDuration" value="200" varType="3" description=""/>
+                    <param name="AniAutoReverse" value="False" varType="11" description=""/>
+                    <param name="AniLoop" value="False" varType="11" description=""/>
+                    <param name="AniInterpolationTypeOut" value="False" varType="11" description=""/>
+                    <param name="Delay" value="0" varType="3" description=""/>
+                    <param name="ValueFromCurrent" value="True" varType="11" description=""/>
+                    <param name="ForceFromInitValue" value="False" varType="11" description=""/>
+                    <param name="ForceSetVisible" value="False" varType="11" description=""/>
+                    <param name="Value" value="1" varType="3" description=""/>
+                    <param name="TerminateLoopByClick" value="True" varType="11" description=""/>
+                  </command>
+                </target>
+                <target targetID="FF79F19D-988C-403D-B4AB-E41FC2AD65B4" isChecked="True" isAutoRecovery="False" isLoop="False" execMode="emSequence">
+                  <command name="Change Visibility" isChecked="True" descrition="">
+                    <param name="AniInterpolation" value="1" varType="3" description=""/>
+                    <param name="AniDuration" value="200" varType="3" description=""/>
+                    <param name="AniAutoReverse" value="False" varType="11" description=""/>
+                    <param name="AniLoop" value="False" varType="11" description=""/>
+                    <param name="AniInterpolationTypeOut" value="False" varType="11" description=""/>
+                    <param name="Delay" value="0" varType="3" description=""/>
+                    <param name="ValueFromCurrent" value="True" varType="11" description=""/>
+                    <param name="ForceFromInitValue" value="False" varType="11" description=""/>
+                    <param name="ForceSetVisible" value="False" varType="11" description=""/>
+                    <param name="Value" value="1" varType="3" description=""/>
+                    <param name="TerminateLoopByClick" value="True" varType="11" description=""/>
+                  </command>
+                </target>
+              </behaviour>
+            </event>
+          </events>
+        </entry>
+      </interactiveData>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Mapa%2CReclama%C3%A7%C3%B5es</text>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+    </control>
+    <control controlID="00DC7966-A401-4837-9E52-8BC5C5FD9582" controlTypeID="Circle" x="292" y="524" w="58" h="58" zOrder="3">
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="40D39DB4-1D2C-419F-B56E-2A1F4F15CD60" linkType="ltPageLink" isApplyIncludePage="False" title="Reclamar">
+          <area shape="0" alt="" ID="{518C6D22-1D3A-42FB-8FC2-6EA0DB755DB6}" coords="(0,0,58,58)"/>
+        </link>
+      </links>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>%2B</text>
+      <textSize>40</textSize>
+      <textVAlign>VaTop</textVAlign>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <selectedIndex>-1</selectedIndex>
+      <shapeBorderType>SbEllipse</shapeBorderType>
+    </control>
+    <control controlID="FF79F19D-988C-403D-B4AB-E41FC2AD65B4" controlTypeID="Image" x="292" y="78" w="58" h="58" zOrder="4">
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="B481AF06-BBC0-4E4C-88F9-C2E9838DB7A7" linkType="ltPageLink" isApplyIncludePage="False" title="Perfil">
+          <area shape="0" alt="" ID="{F4E273E9-856C-4850-9BB4-AF6C37014B1C}" coords="(0,0,58,58)"/>
+        </link>
+      </links>
+      <clipShapeType>SbEllipse</clipShapeType>
+      <URL>B1D59E1E151156205E3F589E4CB48F08.png</URL>
+      <fitMode>fmFit</fitMode>
+    </control>
+    <control controlID="8B5B2F15-B4D9-4AD8-ABA0-1E90B2A4EE02" controlTypeID="Top ActionBar" x="0" y="20" w="360" h="48" zOrder="5">
+      <color>4292730333</color>
+      <font family="Comic+Sans+MS" displayName="Comic+Sans+MS_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False" useDefaultFontFamily="False"/>
+      <text>Acabou+minha+luz</text>
+      <textSize>16</textSize>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <showMenu>False</showMenu>
+      <showBack>False</showBack>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

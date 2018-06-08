@@ -1,0 +1,56 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="7D02520D-9AE6-4A95-AEDC-DE9D493C7E09" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="7">
+    <control controlID="39CCFF72-AE99-4422-BFAE-5946274FBC43" controlTypeID="Icon" x="48" y="81" w="24" h="24" zOrder="0">
+      <icon>
+        <ID/>
+        <iconFontName>jdFontAwesome</iconFontName>
+        <iconCode>61747</iconCode>
+      </icon>
+      <URL>4C5EC2040758376D6A3B017137590B32.svg</URL>
+    </control>
+    <control controlID="412C9752-C9AF-4D91-81B9-D8D9D7901E1E" controlTypeID="TextArea" x="82" y="81" w="90" h="25" zOrder="1">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>17%2F05%2F2018%0D%0A</text>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="24633F6C-C616-4CC7-A111-15CE5426049A" controlTypeID="Icon" x="48" y="115" w="24" h="24" zOrder="2">
+      <icon>
+        <ID/>
+        <iconFontName>jdFontAwesome</iconFontName>
+        <iconCode>61463</iconCode>
+      </icon>
+      <URL>8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg</URL>
+    </control>
+    <control controlID="63C29B3F-85BA-46F4-B76F-D640A0AD6AFF" controlTypeID="TextArea" x="82" y="115" w="90" h="25" zOrder="3">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>12%3A00</text>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="D9736787-AAF7-4A2A-92F3-5FAB06AC7D72" controlTypeID="Icon" x="48" y="149" w="24" h="24" zOrder="4">
+      <icon>
+        <ID/>
+        <iconFontName>jdIonicons</iconFontName>
+        <iconCode>62368</iconCode>
+      </icon>
+      <URL>B91434690C5B5224D1CC6B1998F1178A.svg</URL>
+    </control>
+    <control controlID="FDAB8CD0-4942-426E-BF67-B738D1625274" controlTypeID="TextArea" x="82" y="149" w="102" h="24" zOrder="5">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Samuel+Costa</text>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="CCD5379F-F88B-4383-A5B7-C104DF788E04" controlTypeID="Label" x="65" y="47" w="77" h="19" zOrder="6">
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>Reclama%C3%A7%C3%A3o</text>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>
