@@ -1,0 +1,81 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="86124138-85BA-499C-A0C7-1B2D7C63BC23" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="10">
+    <control controlID="8DEDD4F6-C8FB-4CA9-8FD5-49E5D22C4FE2" controlTypeID="Map" x="20" y="87" w="330" h="211" zOrder="0"/>
+    <control controlID="2D6DAABA-1758-4320-AAE7-5B26018C7FAC" controlTypeID="Icon" x="20" y="322" w="24" h="24" zOrder="1">
+      <icon>
+        <ID/>
+        <iconFontName>jdFontAwesome</iconFontName>
+        <iconCode>61747</iconCode>
+      </icon>
+      <URL>4C5EC2040758376D6A3B017137590B32.svg</URL>
+    </control>
+    <control controlID="9F9B2078-77C1-4565-BCAC-B65AF52B45E4" controlTypeID="TextArea" x="54" y="322" w="199" h="25" zOrder="2">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>10%2F04%2F2018%0D%0A</text>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="612DAD05-B410-4AF8-AA09-EA16BA4E722E" controlTypeID="Icon" x="20" y="356" w="24" h="24" zOrder="3">
+      <icon>
+        <ID/>
+        <iconFontName>jdFontAwesome</iconFontName>
+        <iconCode>61463</iconCode>
+      </icon>
+      <URL>8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg</URL>
+    </control>
+    <control controlID="B4363D8D-3737-475A-8046-8159B2D28103" controlTypeID="TextArea" x="54" y="356" w="199" h="25" zOrder="4">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>12%3A00</text>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="6A5CC557-16A7-49A7-9D27-8DDD8C05E733" controlTypeID="Image" x="150" y="158" w="70" h="70" zOrder="5">
+      <caption>icone+falta+de+energia</caption>
+      <URL>6A2B3699976D17444ECADC9FAD28F5EA.png</URL>
+    </control>
+    <control controlID="5A99BE9B-25C4-4F2F-B472-62D58B19578A" controlTypeID="Icon" x="20" y="391" w="24" h="24" zOrder="6">
+      <icon>
+        <ID/>
+        <iconFontName>jdIonicons</iconFontName>
+        <iconCode>62299</iconCode>
+      </icon>
+      <URL>807B9BF23EE1023139B925F62B0D2029.svg</URL>
+    </control>
+    <control controlID="E4DA2868-CF9E-48D1-91E0-82F439958686" controlTypeID="Label" x="54" y="393" w="291" h="19" zOrder="7">
+      <isAutoSize>False</isAutoSize>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Um+fio+do+poste+na+na+rua+T26+est%C3%A1+solto%2C+</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="89A77DD6-66BA-481B-B826-DAB2DFFD74A5" controlTypeID="Label" x="54" y="412" w="291" h="19" zOrder="8">
+      <isAutoSize>False</isAutoSize>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>acredito+que+seja+por+isso</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="32C80142-AA5E-4025-A585-F1414C477CE8" controlTypeID="Top ActionBar" x="0" y="0" w="360" h="48" zOrder="9">
+      <color>4292730333</color>
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="ACEE58F1-94E6-47DB-884A-EDCCC2944543" linkType="ltPageLink" isApplyIncludePage="False" title="Home">
+          <area shape="0" alt="" ID="{8501CE1B-308F-4919-8FA5-9C072A88F08C}" coords="(2,4,42,44)"/>
+        </link>
+        <link targetPageID="" linkType="ltPageLink" isApplyIncludePage="False" title="Menu">
+          <area shape="0" alt="" ID="{F800ECCC-DAE7-40AE-8B6C-405B7242344A}" coords="(0,0,0,0)"/>
+        </link>
+      </links>
+      <font family="Comic+Sans+MS" displayName="Comic+Sans+MS_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False" useDefaultFontFamily="False"/>
+      <text>Acabou+Minha+Luz</text>
+      <textSize>16</textSize>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <showMenu>False</showMenu>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

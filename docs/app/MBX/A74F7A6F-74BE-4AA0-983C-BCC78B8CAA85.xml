@@ -1,0 +1,49 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="A74F7A6F-74BE-4AA0-983C-BCC78B8CAA85" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="7">
+    <control controlID="6D256D48-635D-42C7-9F16-8E3E1853DD79" controlTypeID="Map" x="15" y="69" w="330" h="211" zOrder="0"/>
+    <control controlID="F5AE1191-CC8E-45C8-AFF3-5F7395056477" controlTypeID="Icon" x="15" y="304" w="24" h="24" zOrder="1">
+      <icon>
+        <ID/>
+        <iconFontName>jdFontAwesome</iconFontName>
+        <iconCode>61747</iconCode>
+      </icon>
+      <URL>4C5EC2040758376D6A3B017137590B32.svg</URL>
+    </control>
+    <control controlID="C373B628-A10D-4AEC-9583-1E9544BE8C45" controlTypeID="TextArea" x="49" y="304" w="199" h="25" zOrder="2">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>04%2F03%2F2018%0D%0A</text>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="DF8F929A-F18B-4AD8-997C-BAE8F0244092" controlTypeID="Icon" x="15" y="338" w="24" h="24" zOrder="3">
+      <icon>
+        <ID/>
+        <iconFontName>jdFontAwesome</iconFontName>
+        <iconCode>61463</iconCode>
+      </icon>
+      <URL>8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg</URL>
+    </control>
+    <control controlID="2DEB8B5A-D8FF-4ACB-B0B3-DD5062DD3015" controlTypeID="TextArea" x="49" y="338" w="199" h="25" zOrder="4">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>12%3A00</text>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="26E3D360-3F6D-4603-AB95-CA98E0C89B1C" controlTypeID="Image" x="145" y="140" w="70" h="70" zOrder="5">
+      <caption>icone+falta+de+energia</caption>
+      <URL>6A2B3699976D17444ECADC9FAD28F5EA.png</URL>
+    </control>
+    <control controlID="EF7DCBBB-E8B2-4D4C-A5DD-2EC18A3EFAF1" controlTypeID="Icon" x="15" y="373" w="24" h="24" zOrder="6">
+      <icon>
+        <ID/>
+        <iconFontName>jdIonicons</iconFontName>
+        <iconCode>62299</iconCode>
+      </icon>
+      <URL>807B9BF23EE1023139B925F62B0D2029.svg</URL>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

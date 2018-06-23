@@ -1,0 +1,161 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="40D39DB4-1D2C-419F-B56E-2A1F4F15CD60" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="17">
+    <control controlID="45561FCF-BE11-4EDE-85FD-CD5F82445DB2" controlTypeID="Top ActionBar" x="0" y="0" w="360" h="48" zOrder="0">
+      <color>4292730333</color>
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="ACEE58F1-94E6-47DB-884A-EDCCC2944543" linkType="ltPageLink" isApplyIncludePage="False" title="Home">
+          <area shape="0" alt="" ID="{4FA152C4-B0E2-41B8-9F07-7438E2807EFA}" coords="(2,4,42,44)"/>
+        </link>
+        <link targetPageID="" linkType="ltPageLink" isApplyIncludePage="False" title="Menu">
+          <area shape="0" alt="" ID="{3FD8C084-28FA-47F0-A1F7-BE91DC8764C7}" coords="(0,0,0,0)"/>
+        </link>
+      </links>
+      <font family="Comic+Sans+MS" displayName="Comic+Sans+MS_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False" useDefaultFontFamily="False"/>
+      <text>Acabou+Minha+Luz</text>
+      <textSize>16</textSize>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <showMenu>False</showMenu>
+    </control>
+    <control controlID="C1B58272-BBDA-4D83-BDFF-DDDF451CD805" controlTypeID="Shape" x="178" y="557" w="147" h="42" zOrder="1">
+      <color>4292730333</color>
+      <interactiveData>
+        <entry title="">
+          <area shape="0" alt="" ID="{59A7CFE9-D2C4-487D-A716-6AAB9B95BACD}" coords="(0,0,147,42)"/>
+          <events title="">
+            <event eventType="atClick" isChecked="True">
+              <behaviour title="" isChecked="True" isWait="False" isLoop="False" execMode="emParallel">
+                <target targetID="A5310958-E89F-496C-A009-75ED0CD9D6D6" isChecked="True" isAutoRecovery="False" isLoop="False" execMode="emSequence">
+                  <command name="Change Visibility" isChecked="True" descrition="">
+                    <param name="AniInterpolation" value="1" varType="3" description=""/>
+                    <param name="AniDuration" value="200" varType="3" description=""/>
+                    <param name="AniAutoReverse" value="False" varType="11" description=""/>
+                    <param name="AniLoop" value="False" varType="11" description=""/>
+                    <param name="AniInterpolationTypeOut" value="False" varType="11" description=""/>
+                    <param name="Delay" value="0" varType="3" description=""/>
+                    <param name="ValueFromCurrent" value="True" varType="11" description=""/>
+                    <param name="ForceFromInitValue" value="False" varType="11" description=""/>
+                    <param name="ForceSetVisible" value="False" varType="11" description=""/>
+                    <param name="Value" value="0" varType="3" description=""/>
+                    <param name="TerminateLoopByClick" value="True" varType="11" description=""/>
+                  </command>
+                </target>
+              </behaviour>
+            </event>
+          </events>
+        </entry>
+      </interactiveData>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Enviar+Reclama%C3%A7%C3%A3o</text>
+      <textSize>14</textSize>
+      <selectedIndex>-1</selectedIndex>
+      <radius>15</radius>
+      <radiusIsPercent>True</radiusIsPercent>
+    </control>
+    <control controlID="4B0EBE7B-C49A-4842-89C9-B6F75FAB4D31" controlTypeID="Label" x="43" y="288" w="253" h="19" zOrder="2">
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>Marque+no+mapa+sua+exata+localiza%C3%A7%C3%A3o</text>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="2F28C45D-7F7B-4B87-8DD5-22E657C37B94" controlTypeID="Line" x="43" y="194" w="272" h="1" zOrder="3">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <controlPoint>(136,0)</controlPoint>
+      <startPoint>(1,0)</startPoint>
+      <endPoint>(272,0)</endPoint>
+    </control>
+    <control controlID="6224FE60-CD80-4A71-B53D-B9768280A2D0" controlTypeID="Label" x="45" y="142" w="215" h="19" zOrder="4">
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>Desde+quando+est%C3%A1+sem+energia%3F</text>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="5053C7CE-A2DC-4E20-ABBE-CFB1B370F741" controlTypeID="Label" x="48" y="171" w="117" h="19" zOrder="5">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>01%2F06%2F2018+-+15%3A15</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="F78331E3-1743-4D6D-B5F9-BF12784F4949" controlTypeID="Line" x="46" y="257" w="272" h="1" zOrder="6">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <controlPoint>(136,0)</controlPoint>
+      <startPoint>(1,0)</startPoint>
+      <endPoint>(272,0)</endPoint>
+    </control>
+    <control controlID="B16E8D8B-3D6F-45B7-B762-ADA3956073AE" controlTypeID="Label" x="43" y="205" w="83" h="19" zOrder="7">
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>Observa%C3%A7%C3%B5es</text>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="29AEAA1E-BC4E-418E-8168-B031662BCE09" controlTypeID="Label" x="46" y="234" w="162" h="19" zOrder="8">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Uma+observa%C3%A7%C3%A3o+qualquer</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="10D4F85C-6BE6-4F32-969D-508ECC5401AB" controlTypeID="Map" x="43" y="317" w="259" h="211" zOrder="9"/>
+    <control controlID="5C900DE9-D9B3-4EBE-AC50-DDFAF4C84A8B" controlTypeID="Icon" x="160" y="354" w="24" h="24" zOrder="10">
+      <color>4278190080</color>
+      <icon>
+        <ID/>
+        <iconFontName>jdIonicons</iconFontName>
+        <iconCode>62371</iconCode>
+      </icon>
+      <URL>474A61FDC203C97B2EEFAF494C017CCB.svg</URL>
+    </control>
+    <control controlID="A5310958-E89F-496C-A009-75ED0CD9D6D6" controlTypeID="Panel" x="61" y="220" w="241" h="199" zOrder="11">
+      <isShow>False</isShow>
+      <groupChildrenDescriptors>
+        <control controlID="846ADB33-E56F-44C8-BE20-5328A453223A" controlTypeID="ContentPanel" x="0" y="0" w="259" h="236" zOrder="0">
+          <groupChildrenDescriptors>
+            <control controlID="B3ACEFB6-C031-464A-A51C-EDA4BF6FF99D" controlTypeID="ScrollArea" x="0" y="0" w="259" h="236" zOrder="0">
+              <caption>alertaCadastroReclamacao</caption>
+              <canMove>False</canMove>
+              <alias>alertaCadastroReclamacao</alias>
+              <groupChildrenDescriptors>
+                <control controlID="76DFA763-9174-477D-8538-D79B486F24B5" controlTypeID="ScrollViewPort" x="0" y="0" w="300" h="300" zOrder="0">
+                  <caption>ScrollViewPort</caption>
+                  <alias>viewPort</alias>
+                  <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+                    <link targetPageID="FC1B3D44-BD74-441A-85F7-DF43CB3A31A4" linkType="ltIncludePage" isApplyIncludePage="True" title="Link">
+                      <area shape="0" alt="" ID="{FB00C2BB-1C26-4A1F-B1B1-87E67B1C34A6}" coords="(0,0,300,300)"/>
+                    </link>
+                  </links>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="C7384738-E401-4731-8183-D6F5E68BF386" controlTypeID="Border" x="0" y="0" w="241" h="199" zOrder="1">
+          <alias>borderLayer</alias>
+        </control>
+      </groupChildrenDescriptors>
+      <thinkness>1</thinkness>
+    </control>
+    <control controlID="88875522-B588-4564-9172-5FC6789CD45B" controlTypeID="TextArea" x="56" y="66" w="240" h="66" zOrder="12">
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>Preencha+os+campos+para+fazer+a+reclama%C3%A7%C3%A3o</text>
+      <textSize>16</textSize>
+      <textAlign>HaCenter</textAlign>
+      <textStyles>[fsBold]</textStyles>
+      <useDefaultTextSize>False</useDefaultTextSize>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

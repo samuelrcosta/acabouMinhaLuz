@@ -1,0 +1,31 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="B9068747-C8F5-4273-8F7F-90747B0D356A" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="3">
+    <control controlID="7087C514-8EC7-4ABD-A3F0-44EA63F3184C" controlTypeID="StatusBar(Android)" x="0" y="0" w="360" h="20" zOrder="0"/>
+    <control controlID="913F2869-B151-4F3A-9304-22E825612E12" controlTypeID="Top ActionBar" x="0" y="20" w="360" h="48" zOrder="1">
+      <color>4292730333</color>
+      <font family="Comic+Sans+MS" displayName="Comic+Sans+MS_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False" useDefaultFontFamily="False"/>
+      <text>Acabou+Minha+Luz</text>
+      <textSize>16</textSize>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <showMenu>False</showMenu>
+      <showBack>False</showBack>
+    </control>
+    <control controlID="B7549F61-77C5-421B-8E1D-A548867323D0" controlTypeID="TextArea" x="42" y="221" w="277" h="198" zOrder="2">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>O+aplicativo+n%C3%A3o+possui+permiss%C3%A3o+para+utilizar+os+recursos+de+Localiza%C3%A7%C3%A3o+do+seu+dispositivo.+%0D%0A%0D%0AHabilite+a+permiss%C3%A3o+nas+configura%C3%A7%C3%B5es+para+que+voc%C3%AA+possa+utilizar+a+aplica%C3%A7%C3%A3o.</text>
+      <textColor>4294901760</textColor>
+      <textSize>18</textSize>
+      <textAlign>HaCenter</textAlign>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

@@ -1,0 +1,139 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="7218BFDC-7CB9-4A71-BAB3-4B0873F6F9A6" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="17">
+    <control controlID="41FB3D2D-FE7F-4E6D-9320-C35DAFBBDF07" controlTypeID="Label" x="61" y="71" w="241" h="40" zOrder="0">
+      <font family="Comic+Sans+MS" displayName="Comic+Sans+MS_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False" useDefaultFontFamily="False"/>
+      <text>Acabou+minha+Luz</text>
+      <textSize>28</textSize>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="12EA9ED4-4333-435C-96A6-AF1F54220B10" controlTypeID="Line" x="42" y="360" w="272" h="1" zOrder="1">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <controlPoint>(136,0)</controlPoint>
+      <startPoint>(1,0)</startPoint>
+      <endPoint>(272,0)</endPoint>
+    </control>
+    <control controlID="3EDB7EBC-C95A-48E5-8E3D-CB6638E82399" controlTypeID="Label" x="44" y="308" w="35" h="19" zOrder="2">
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>Email</text>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="0F3D3FCB-50D4-497E-BF99-5533C084AFF6" controlTypeID="Label" x="47" y="337" w="131" h="19" zOrder="3">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>teste@prototipo.com</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="D098AFBC-583A-4497-8678-BE17073CEC6B" controlTypeID="Line" x="42" y="423" w="272" h="1" zOrder="4">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <controlPoint>(136,0)</controlPoint>
+      <startPoint>(1,0)</startPoint>
+      <endPoint>(272,0)</endPoint>
+    </control>
+    <control controlID="76BE037E-6248-42C3-BB17-91E9E5A860AB" controlTypeID="Label" x="42" y="371" w="39" h="19" zOrder="5">
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>Senha</text>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="41784B5A-F5DD-4843-A6E8-45B04E2664D7" controlTypeID="Shape" x="104" y="461" w="139" h="40" zOrder="6">
+      <color>4284900966</color>
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="ACEE58F1-94E6-47DB-884A-EDCCC2944543" linkType="ltPageLink" isApplyIncludePage="False" title="Home">
+          <area shape="0" alt="" ID="{81AAD48E-5134-4468-9A99-003B989B784A}" coords="(0,0,139,40)"/>
+        </link>
+      </links>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Cadastrar</text>
+      <textColor>4294967295</textColor>
+      <textSize>14</textSize>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="CA42AE64-6A51-43E9-AE37-CC8D1C898D21" controlTypeID="Label" x="107" y="527" w="130" h="19" zOrder="7">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>J%C3%A1+possui+uma+conta%3F</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="E1B50DE5-92EB-4CB3-A099-9B8450F50460" controlTypeID="Label" x="156" y="546" w="33" h="19" zOrder="8">
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="8BCAEF70-7287-479A-A840-497478C7CB98" linkType="ltPageLink" isApplyIncludePage="False" title="Login">
+          <area shape="0" alt="" ID="{80373768-A399-4CB4-88DC-347D987969D0}" coords="(0,0,33,19)"/>
+        </link>
+      </links>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Login</text>
+      <textColor>4278190335</textColor>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="9C04138A-204C-4EB7-9D99-FEB590FD1440" controlTypeID="Line" x="45" y="230" w="272" h="1" zOrder="9">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <controlPoint>(136,0)</controlPoint>
+      <startPoint>(1,0)</startPoint>
+      <endPoint>(272,0)</endPoint>
+    </control>
+    <control controlID="B3BB884F-6879-45C2-AA8B-F1F21BCD4321" controlTypeID="Label" x="47" y="178" w="40" h="19" zOrder="10">
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>Nome</text>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="0DF1B519-06C8-4AA4-B262-3978C09E75AE" controlTypeID="Label" x="50" y="207" w="90" h="19" zOrder="11">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Ciclano+Fulano</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="AF014DC0-5B1C-43D5-B859-B9527D50C436" controlTypeID="Line" x="45" y="293" w="272" h="1" zOrder="12">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <controlPoint>(136,0)</controlPoint>
+      <startPoint>(1,0)</startPoint>
+      <endPoint>(272,0)</endPoint>
+    </control>
+    <control controlID="E7FF2EED-114F-42B4-9A4B-7AAA0421B840" controlTypeID="Label" x="42" y="241" w="24" h="19" zOrder="13">
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>CPF</text>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="F7523F73-89E7-443A-9015-C0EDA14095AC" controlTypeID="Label" x="45" y="270" w="92" h="19" zOrder="14">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>111.111.111-11</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="6810AE61-FCB9-4D57-A128-52C8B96F4CDF" controlTypeID="Label" x="50" y="400" w="46" h="19" zOrder="15">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>********</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="23E3FED6-391D-4ABA-A74C-F2AF015A4C75" controlTypeID="StatusBar(Android)" x="0" y="0" w="360" h="20" zOrder="16"/>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

@@ -1,0 +1,246 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="E902EEAD-6CA6-4F63-A54B-6CDD2C7E6940" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="31">
+    <control controlID="C9180396-3F0F-4B10-949E-A8FB37A600B5" controlTypeID="Top ActionBar" x="0" y="0" w="360" h="48" zOrder="0">
+      <color>4292730333</color>
+      <font family="Comic+Sans+MS" displayName="Comic+Sans+MS_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False" useDefaultFontFamily="False"/>
+      <text>Acabou+Minha+Luz</text>
+      <textSize>16</textSize>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <showMenu>False</showMenu>
+      <showBack>False</showBack>
+    </control>
+    <control controlID="301A0C3E-047D-488A-A93F-E9CDA2EABE36" controlTypeID="Line" x="21" y="169" w="318" h="2" zOrder="1">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <controlPoint>(160,1)</controlPoint>
+      <startPoint>(1,1)</startPoint>
+      <endPoint>(318,1)</endPoint>
+    </control>
+    <control controlID="5F5031B0-4630-42DD-9D1D-C788CC60C1FA" controlTypeID="Circle" x="22" y="69" w="85" h="85" zOrder="2">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <selectedIndex>-1</selectedIndex>
+      <shapeBorderType>SbEllipse</shapeBorderType>
+    </control>
+    <control controlID="46DB7CAE-38FA-4427-8FBF-70CE7835BC0B" controlTypeID="Image" x="21" y="71" w="85" h="85" zOrder="3">
+      <caption>icone+falta+de+energia</caption>
+      <radius>50</radius>
+      <radiusIsPercent>True</radiusIsPercent>
+      <URL>6A2B3699976D17444ECADC9FAD28F5EA.png</URL>
+    </control>
+    <control controlID="EFB9C91E-3D36-423E-A335-D024B605EBB7" controlTypeID="Icon" x="116" y="69" w="24" h="24" zOrder="4">
+      <icon>
+        <ID/>
+        <iconFontName>jdIonicons</iconFontName>
+        <iconCode>62161</iconCode>
+      </icon>
+      <URL>524D9A41776CD1EF98956BB68F9875AC.svg</URL>
+    </control>
+    <control controlID="3251F2B4-D694-4662-8D9F-D0098290F849" controlTypeID="Label" x="145" y="71" w="71" h="19" zOrder="5">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>17%2F05%2F2018</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="DE17DA27-57F5-4375-9AE7-61F793D34FDD" controlTypeID="Icon" x="116" y="103" w="24" h="24" zOrder="6">
+      <icon>
+        <ID/>
+        <iconFontName>jdFontAwesome</iconFontName>
+        <iconCode>61463</iconCode>
+      </icon>
+      <URL>8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg</URL>
+    </control>
+    <control controlID="E23BBB7D-269D-425B-9F68-43D7193C6763" controlTypeID="Label" x="150" y="105" w="33" h="19" zOrder="7">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>19%3A00</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="AB41DE8A-F2A4-4BA8-829A-32FADC371A8D" controlTypeID="Icon" x="116" y="135" w="24" h="24" zOrder="8">
+      <icon>
+        <ID/>
+        <iconFontName>jdIonicons</iconFontName>
+        <iconCode>62299</iconCode>
+      </icon>
+      <URL>807B9BF23EE1023139B925F62B0D2029.svg</URL>
+    </control>
+    <control controlID="8E42DB88-E3F7-49D9-90B8-ED4228857C83" controlTypeID="Label" x="147" y="137" w="180" h="19" zOrder="9">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Um+poste+est%C3%A1+pegando+fogo</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="2C9A190A-BEF8-42F5-8673-A6B00991DEEE" controlTypeID="Line" x="21" y="294" w="318" h="2" zOrder="10">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <controlPoint>(160,1)</controlPoint>
+      <startPoint>(1,1)</startPoint>
+      <endPoint>(318,1)</endPoint>
+    </control>
+    <control controlID="32007C13-FE1C-49C3-8841-466396DB01E8" controlTypeID="Circle" x="22" y="194" w="85" h="85" zOrder="11">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <selectedIndex>-1</selectedIndex>
+      <shapeBorderType>SbEllipse</shapeBorderType>
+    </control>
+    <control controlID="74973F07-1AEC-4D5E-A722-877DEF2C8B22" controlTypeID="Image" x="21" y="196" w="85" h="85" zOrder="12">
+      <caption>icone+falta+de+energia</caption>
+      <radius>50</radius>
+      <radiusIsPercent>True</radiusIsPercent>
+      <URL>6A2B3699976D17444ECADC9FAD28F5EA.png</URL>
+    </control>
+    <control controlID="733D6B60-03C1-49A6-9ECD-36FBE9081F05" controlTypeID="Icon" x="116" y="194" w="24" h="24" zOrder="13">
+      <icon>
+        <ID/>
+        <iconFontName>jdIonicons</iconFontName>
+        <iconCode>62161</iconCode>
+      </icon>
+      <URL>524D9A41776CD1EF98956BB68F9875AC.svg</URL>
+    </control>
+    <control controlID="E5CC2807-AAC0-44C5-BEC4-1800AEE09646" controlTypeID="Label" x="145" y="196" w="71" h="19" zOrder="14">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>17%2F05%2F2018</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="3959393F-3EB4-46C6-9A88-F76C1C72674B" controlTypeID="Icon" x="116" y="228" w="24" h="24" zOrder="15">
+      <icon>
+        <ID/>
+        <iconFontName>jdFontAwesome</iconFontName>
+        <iconCode>61463</iconCode>
+      </icon>
+      <URL>8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg</URL>
+    </control>
+    <control controlID="6376B748-2F42-4896-9786-A386F3F6727C" controlTypeID="Label" x="150" y="230" w="33" h="19" zOrder="16">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>19%3A00</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="020500CA-8B0A-46E0-B113-4E7333B5409D" controlTypeID="Icon" x="116" y="260" w="24" h="24" zOrder="17">
+      <icon>
+        <ID/>
+        <iconFontName>jdIonicons</iconFontName>
+        <iconCode>62299</iconCode>
+      </icon>
+      <URL>807B9BF23EE1023139B925F62B0D2029.svg</URL>
+    </control>
+    <control controlID="E2AC518B-09DA-4680-9F1A-0C88E7E406FD" controlTypeID="Label" x="147" y="262" w="180" h="19" zOrder="18">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Um+poste+est%C3%A1+pegando+fogo</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="04DC4ADA-E267-466D-92F8-F4098F702BEF" controlTypeID="Line" x="21" y="419" w="318" h="2" zOrder="19">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <controlPoint>(160,1)</controlPoint>
+      <startPoint>(1,1)</startPoint>
+      <endPoint>(318,1)</endPoint>
+    </control>
+    <control controlID="D5E4F782-8F66-4B5B-9E11-29E5A44D24A6" controlTypeID="Circle" x="22" y="319" w="85" h="85" zOrder="20">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <selectedIndex>-1</selectedIndex>
+      <shapeBorderType>SbEllipse</shapeBorderType>
+    </control>
+    <control controlID="EDBCABED-CFDD-4BBF-9CFA-D99E054091E4" controlTypeID="Image" x="21" y="321" w="85" h="85" zOrder="21">
+      <caption>icone+falta+de+energia</caption>
+      <radius>50</radius>
+      <radiusIsPercent>True</radiusIsPercent>
+      <URL>6A2B3699976D17444ECADC9FAD28F5EA.png</URL>
+    </control>
+    <control controlID="74F37C11-BAC5-4257-983D-9EE16895D292" controlTypeID="Icon" x="116" y="319" w="24" h="24" zOrder="22">
+      <icon>
+        <ID/>
+        <iconFontName>jdIonicons</iconFontName>
+        <iconCode>62161</iconCode>
+      </icon>
+      <URL>524D9A41776CD1EF98956BB68F9875AC.svg</URL>
+    </control>
+    <control controlID="FF1A933D-2F10-425E-A489-FCDB0A2A3B2E" controlTypeID="Label" x="145" y="321" w="71" h="19" zOrder="23">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>17%2F05%2F2018</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="DBE02EEB-A6BB-4C86-9096-579EF03169B4" controlTypeID="Icon" x="116" y="353" w="24" h="24" zOrder="24">
+      <icon>
+        <ID/>
+        <iconFontName>jdFontAwesome</iconFontName>
+        <iconCode>61463</iconCode>
+      </icon>
+      <URL>8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg</URL>
+    </control>
+    <control controlID="9FD47507-A290-4B09-95C8-9D34EE9EAB80" controlTypeID="Label" x="150" y="355" w="33" h="19" zOrder="25">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>19%3A00</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="C33EBC15-7AA7-4AB1-A414-2EB791CA4D61" controlTypeID="Icon" x="116" y="385" w="24" h="24" zOrder="26">
+      <icon>
+        <ID/>
+        <iconFontName>jdIonicons</iconFontName>
+        <iconCode>62299</iconCode>
+      </icon>
+      <URL>807B9BF23EE1023139B925F62B0D2029.svg</URL>
+    </control>
+    <control controlID="A96B8E67-0B2F-43F0-B9B5-E2C31CFF3BB7" controlTypeID="Label" x="147" y="387" w="180" h="19" zOrder="27">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Um+poste+est%C3%A1+pegando+fogo</text>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="CE4A8999-7E66-4680-AA31-EEB01DEA10C9" controlTypeID="Shape" x="15" y="51" w="325" h="118" zOrder="28">
+      <color>16777215</color>
+      <borderVisible>False</borderVisible>
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="F6EF2635-1D46-4A17-83E8-EAC0D4402152" linkType="ltPageLink" isApplyIncludePage="False" title="Reclamacao1">
+          <area shape="0" alt="" ID="{CE762AEB-E117-4A1E-A842-7ACA9896C6A6}" coords="(0,0,325,118)"/>
+        </link>
+      </links>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="7A6A3989-8821-4080-B249-A57BC3E27B29" controlTypeID="Shape" x="18" y="179" w="325" h="118" zOrder="29">
+      <color>16777215</color>
+      <borderVisible>False</borderVisible>
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="8E6DB5D1-B3FC-418A-A980-30C1A8AE4EE7" linkType="ltPageLink" isApplyIncludePage="False" title="Reclamacao2">
+          <area shape="0" alt="" ID="{38D0C32C-70D6-456B-9E09-4BF7D010B729}" coords="(0,0,325,118)"/>
+        </link>
+      </links>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="E7E7DC3D-FB45-4871-965A-A4D00D779CF8" controlTypeID="Shape" x="18" y="303" w="325" h="118" zOrder="30">
+      <color>16777215</color>
+      <borderVisible>False</borderVisible>
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="86124138-85BA-499C-A0C7-1B2D7C63BC23" linkType="ltPageLink" isApplyIncludePage="False" title="Reclamacao3">
+          <area shape="0" alt="" ID="{38D0C32C-70D6-456B-9E09-4BF7D010B729}" coords="(0,0,325,118)"/>
+        </link>
+      </links>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <textSize>14</textSize>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

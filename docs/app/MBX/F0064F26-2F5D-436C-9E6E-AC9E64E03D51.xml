@@ -1,0 +1,56 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="F0064F26-2F5D-436C-9E6E-AC9E64E03D51" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="7">
+    <control controlID="9A9125BC-8ADB-4F4B-8EFA-C5B2B2A32E5D" controlTypeID="Icon" x="43" y="71" w="24" h="24" zOrder="0">
+      <icon>
+        <ID/>
+        <iconFontName>jdFontAwesome</iconFontName>
+        <iconCode>61747</iconCode>
+      </icon>
+      <URL>4C5EC2040758376D6A3B017137590B32.svg</URL>
+    </control>
+    <control controlID="CE59E3BE-BC85-4381-A9A1-2C9191E7A69B" controlTypeID="TextArea" x="77" y="71" w="90" h="25" zOrder="1">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>15%2F05%2F2018%0D%0A</text>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="07A9E44E-38BA-41E8-8BE4-28A93C03B297" controlTypeID="Icon" x="43" y="105" w="24" h="24" zOrder="2">
+      <icon>
+        <ID/>
+        <iconFontName>jdFontAwesome</iconFontName>
+        <iconCode>61463</iconCode>
+      </icon>
+      <URL>8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg</URL>
+    </control>
+    <control controlID="4F6408A0-5B17-44A5-9652-D338BDAB0CC9" controlTypeID="TextArea" x="77" y="105" w="90" h="25" zOrder="3">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>19%3A00</text>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="84CD5F0A-893F-4437-A2BC-3D8881976226" controlTypeID="Icon" x="43" y="139" w="24" h="24" zOrder="4">
+      <icon>
+        <ID/>
+        <iconFontName>jdIonicons</iconFontName>
+        <iconCode>62368</iconCode>
+      </icon>
+      <URL>B91434690C5B5224D1CC6B1998F1178A.svg</URL>
+    </control>
+    <control controlID="5B2BF07A-F9BA-4534-915E-79CC7752A52B" controlTypeID="TextArea" x="77" y="139" w="102" h="24" zOrder="5">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Jo%C3%A3o+Vitor</text>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="17156FC5-2024-44C8-A636-B9DEF5E43A73" controlTypeID="Label" x="60" y="37" w="77" h="19" zOrder="6">
+      <font family="Segoe+UI" displayName="Segoe+UI_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False"/>
+      <text>Reclama%C3%A7%C3%A3o</text>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

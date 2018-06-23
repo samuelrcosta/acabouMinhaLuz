@@ -1,0 +1,67 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="8E6DB5D1-B3FC-418A-A980-30C1A8AE4EE7" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="8">
+    <control controlID="778AC80F-804C-489B-925D-9AF00C295DF7" controlTypeID="Map" x="15" y="91" w="330" h="211" zOrder="0"/>
+    <control controlID="6819E119-0F77-4814-84E7-85D48E9BBABF" controlTypeID="Icon" x="15" y="326" w="24" h="24" zOrder="1">
+      <icon>
+        <ID/>
+        <iconFontName>jdFontAwesome</iconFontName>
+        <iconCode>61747</iconCode>
+      </icon>
+      <URL>4C5EC2040758376D6A3B017137590B32.svg</URL>
+    </control>
+    <control controlID="C955FA1E-ED66-4E6F-93ED-6958D034E906" controlTypeID="TextArea" x="49" y="326" w="199" h="25" zOrder="2">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>11%2F04%2F2018%0D%0A</text>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="F6A16712-88D8-4094-B05C-F4A4EC73976E" controlTypeID="Icon" x="15" y="360" w="24" h="24" zOrder="3">
+      <icon>
+        <ID/>
+        <iconFontName>jdFontAwesome</iconFontName>
+        <iconCode>61463</iconCode>
+      </icon>
+      <URL>8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg</URL>
+    </control>
+    <control controlID="5BFE57E3-69E6-4C0D-8AE8-8E91E37A56DD" controlTypeID="TextArea" x="49" y="360" w="199" h="25" zOrder="4">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>20%3A34</text>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+    <control controlID="D2C94E91-A06B-4F4F-A83D-6465C9DCF311" controlTypeID="Image" x="151" y="169" w="70" h="70" zOrder="5">
+      <caption>icone+falta+de+energia</caption>
+      <URL>6A2B3699976D17444ECADC9FAD28F5EA.png</URL>
+    </control>
+    <control controlID="F9521F61-C7DB-4173-9814-BEBF606F30C7" controlTypeID="Icon" x="15" y="395" w="24" h="24" zOrder="6">
+      <icon>
+        <ID/>
+        <iconFontName>jdIonicons</iconFontName>
+        <iconCode>62299</iconCode>
+      </icon>
+      <URL>807B9BF23EE1023139B925F62B0D2029.svg</URL>
+    </control>
+    <control controlID="F404FB5F-9485-468C-BE25-36E5A10B05E8" controlTypeID="Top ActionBar" x="0" y="0" w="360" h="48" zOrder="7">
+      <color>4292730333</color>
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="ACEE58F1-94E6-47DB-884A-EDCCC2944543" linkType="ltPageLink" isApplyIncludePage="False" title="Home">
+          <area shape="0" alt="" ID="{8501CE1B-308F-4919-8FA5-9C072A88F08C}" coords="(2,4,42,44)"/>
+        </link>
+        <link targetPageID="" linkType="ltPageLink" isApplyIncludePage="False" title="Menu">
+          <area shape="0" alt="" ID="{F800ECCC-DAE7-40AE-8B6C-405B7242344A}" coords="(0,0,0,0)"/>
+        </link>
+      </links>
+      <font family="Comic+Sans+MS" displayName="Comic+Sans+MS_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False" useDefaultFontFamily="False"/>
+      <text>Acabou+Minha+Luz</text>
+      <textSize>16</textSize>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <showMenu>False</showMenu>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

@@ -1,0 +1,109 @@
+﻿<project version="2.9" name="AcabouMinhaLuz (1)" ID="BB628BA2-3EE0-454B-908B-0990B16C47E7">
+  <params>
+    <pageParam version="5.2" minAllowVersion="5.2"/>
+    <projectParam version="2.9" minAllowVersion="2.9" platform="MtMobile" orientation="MoPortrait" mobileScreenScale="1.77777779102325" mobileType="mmtAndroid" pageSize="(360,640)" backgroundColor="4294967295" fontSize="0" fontFamily="" projectType="ptPersonalProject" isShowTitleIndex="False"/>
+    <previewParam version="1.0"/>
+    <colorParam version="1.0"/>
+  </params>
+  <pages>
+    <page name="Login" ID="8BCAEF70-7287-479A-A840-497478C7CB98" expanded="True" code="UgWEKdt72p" thumbCode="UgWEKdt72p" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="Cadastro" ID="7218BFDC-7CB9-4A71-BAB3-4B0873F6F9A6" expanded="True" code="4BlrDSdcew" thumbCode="4BlrDSdcew" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="Home" ID="ACEE58F1-94E6-47DB-884A-EDCCC2944543" expanded="True" code="xw1VsYt6BW" thumbCode="xw1VsYt6BW" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="B1D59E1E151156205E3F589E4CB48F08.png"/>
+      </images>
+    </page>
+    <page name="Perfil" ID="B481AF06-BBC0-4E4C-88F9-C2E9838DB7A7" expanded="True" code="AdNKYljawb" thumbCode="AdNKYljawb" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="B1D59E1E151156205E3F589E4CB48F08.png"/>
+      </images>
+    </page>
+    <page name="Reclamações" ID="7B5CA41B-9F74-4BB3-9A22-ECA05CF6545E" expanded="True" code="omTksDuN5F" thumbCode="omTksDuN5F" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="Mapa" ID="6128FB65-173E-4580-B436-084401D5E878" expanded="True" code="qDK3N3Lu15" thumbCode="qDK3N3Lu15" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="6A2B3699976D17444ECADC9FAD28F5EA.png"/>
+      </images>
+    </page>
+    <page name="Reclamar" ID="40D39DB4-1D2C-419F-B56E-2A1F4F15CD60" expanded="True" code="eg3oyW3LgG" thumbCode="eg3oyW3LgG" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="474A61FDC203C97B2EEFAF494C017CCB.svg"/>
+      </images>
+    </page>
+    <page name="Reporte1" ID="F0064F26-2F5D-436C-9E6E-AC9E64E03D51" expanded="True" code="uM2veHEN8Y" thumbCode="uM2veHEN8Y" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="B91434690C5B5224D1CC6B1998F1178A.svg"/>
+        <image key="4C5EC2040758376D6A3B017137590B32.svg"/>
+        <image key="8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg"/>
+      </images>
+    </page>
+    <page name="Reporte2" ID="7D02520D-9AE6-4A95-AEDC-DE9D493C7E09" expanded="False" code="6m2dFli1Zu" thumbCode="6m2dFli1Zu" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="B91434690C5B5224D1CC6B1998F1178A.svg"/>
+        <image key="4C5EC2040758376D6A3B017137590B32.svg"/>
+        <image key="8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg"/>
+      </images>
+    </page>
+    <page name="Reclamacao1" ID="F6EF2635-1D46-4A17-83E8-EAC0D4402152" expanded="True" code="RTvgrsfote" thumbCode="RTvgrsfote" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="4C5EC2040758376D6A3B017137590B32.svg"/>
+        <image key="6A2B3699976D17444ECADC9FAD28F5EA.png"/>
+        <image key="807B9BF23EE1023139B925F62B0D2029.svg"/>
+        <image key="8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg"/>
+      </images>
+    </page>
+    <page name="Reclamacao2" ID="8E6DB5D1-B3FC-418A-A980-30C1A8AE4EE7" expanded="True" code="sznnK1NsOO" thumbCode="sznnK1NsOO" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="4C5EC2040758376D6A3B017137590B32.svg"/>
+        <image key="6A2B3699976D17444ECADC9FAD28F5EA.png"/>
+        <image key="807B9BF23EE1023139B925F62B0D2029.svg"/>
+        <image key="8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg"/>
+      </images>
+    </page>
+    <page name="Reclamacao3" ID="86124138-85BA-499C-A0C7-1B2D7C63BC23" expanded="True" code="Xly77nH2Qc" thumbCode="Xly77nH2Qc" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="4C5EC2040758376D6A3B017137590B32.svg"/>
+        <image key="6A2B3699976D17444ECADC9FAD28F5EA.png"/>
+        <image key="807B9BF23EE1023139B925F62B0D2029.svg"/>
+        <image key="8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg"/>
+      </images>
+    </page>
+    <page name="ListaReclamacoes" ID="E902EEAD-6CA6-4F63-A54B-6CDD2C7E6940" expanded="True" code="mBA3w1EpQj" thumbCode="mBA3w1EpQj" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="524D9A41776CD1EF98956BB68F9875AC.svg"/>
+        <image key="6A2B3699976D17444ECADC9FAD28F5EA.png"/>
+        <image key="807B9BF23EE1023139B925F62B0D2029.svg"/>
+        <image key="8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg"/>
+      </images>
+    </page>
+    <page name="alertaCadastroReclamacao" ID="FC1B3D44-BD74-441A-85F7-DF43CB3A31A4" expanded="True" code="YqY9CaVsUh" thumbCode="YqY9CaVsUh" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="alertaEditouPerfil" ID="9961513C-A853-4B19-B094-76D386BAF727" expanded="True" code="zNT3qsNx4T" thumbCode="zNT3qsNx4T" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="Sem internet" ID="B9068747-C8F5-4273-8F7F-90747B0D356A" expanded="True" code="bPeVCKCxDF" thumbCode="bPeVCKCxDF" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="SemPermissaoGPS" ID="79136063-12BF-4CF7-B237-D70CE98B2BB7" expanded="False" code="acAkQmTQH6" thumbCode="acAkQmTQH6" status="psWhite" isfolder="False" isshownode="True"/>
+  </pages>
+  <trash>
+    <page name="Reclamacao4" ID="A74F7A6F-74BE-4AA0-983C-BCC78B8CAA85" expanded="True" code="87lvck57jG" thumbCode="mcSgWJKWMV" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="4C5EC2040758376D6A3B017137590B32.svg"/>
+        <image key="6A2B3699976D17444ECADC9FAD28F5EA.png"/>
+        <image key="807B9BF23EE1023139B925F62B0D2029.svg"/>
+        <image key="8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg"/>
+      </images>
+    </page>
+  </trash>
+  <deletes/>
+  <masters>
+    <master name="Master" ID="18196363-80F3-417E-B649-4700BE41568D" code="wchEIdHbja" status="psWhite" createDate="2018-05-16 21:33:48">
+      <refPages/>
+    </master>
+  </masters>
+  <images>
+    <image key="B91434690C5B5224D1CC6B1998F1178A.svg"/>
+    <image key="474A61FDC203C97B2EEFAF494C017CCB.svg"/>
+    <image key="807B9BF23EE1023139B925F62B0D2029.svg"/>
+    <image key="8568DCF94B760C6E3E4BB0F6B8AAA5E7.svg"/>
+    <image key="4C5EC2040758376D6A3B017137590B32.svg"/>
+    <image key="B1D59E1E151156205E3F589E4CB48F08.png"/>
+    <image key="6A2B3699976D17444ECADC9FAD28F5EA.png"/>
+    <image key="524D9A41776CD1EF98956BB68F9875AC.svg"/>
+  </images>
+</project>

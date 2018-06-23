@@ -1,0 +1,43 @@
+﻿<mockup version="5.2" minAllowVersion="5.2" ID="B9068747-C8F5-4273-8F7F-90747B0D356A" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="4">
+    <control controlID="7087C514-8EC7-4ABD-A3F0-44EA63F3184C" controlTypeID="StatusBar(Android)" x="0" y="0" w="360" h="20" zOrder="0"/>
+    <control controlID="913F2869-B151-4F3A-9304-22E825612E12" controlTypeID="Top ActionBar" x="0" y="20" w="360" h="48" zOrder="1">
+      <color>4292730333</color>
+      <font family="Comic+Sans+MS" displayName="Comic+Sans+MS_%26_Bold" postScript="" weightStyle="Bold" weight="700" isBold="True" isItalic="False" useDefaultFontFamily="False"/>
+      <text>Acabou+Minha+Luz</text>
+      <textSize>16</textSize>
+      <lineSpacing>0</lineSpacing>
+      <textStyles>[fsBold]</textStyles>
+      <useDefaultTextSize>False</useDefaultTextSize>
+      <showMenu>False</showMenu>
+      <showBack>False</showBack>
+    </control>
+    <control controlID="B7549F61-77C5-421B-8E1D-A548867323D0" controlTypeID="TextArea" x="70" y="267" w="210" h="72" zOrder="2">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Sem+conex%C3%A3o+com+a+internet</text>
+      <textColor>4294901760</textColor>
+      <textSize>24</textSize>
+      <textAlign>HaCenter</textAlign>
+      <useDefaultTextSize>False</useDefaultTextSize>
+    </control>
+    <control controlID="C2EF10EE-AAB8-46A7-BA1B-20389FDEE09D" controlTypeID="Label" x="107" y="339" w="126" h="22" zOrder="3">
+      <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+        <link targetPageID="ACEE58F1-94E6-47DB-884A-EDCCC2944543" linkType="ltPageLink" isApplyIncludePage="False" title="Home">
+          <area shape="0" alt="" ID="{2B65A4B6-DBB4-4732-AFDA-1E1D6B672A33}" coords="(0,0,126,22)"/>
+        </link>
+      </links>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Tentar+novamente</text>
+      <textColor>4278190335</textColor>
+      <textSize>16</textSize>
+      <lineSpacing>0</lineSpacing>
+      <useDefaultTextSize>False</useDefaultTextSize>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>
