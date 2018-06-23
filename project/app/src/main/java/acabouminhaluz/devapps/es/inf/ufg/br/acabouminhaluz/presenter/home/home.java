@@ -1,4 +1,4 @@
-package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz;
+package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.home;
 
 import android.Manifest;
 import android.content.Context;
@@ -17,6 +17,8 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.R;
+
 public class home extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
@@ -25,7 +27,7 @@ public class home extends FragmentActivity implements OnMapReadyCallback {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_map);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
