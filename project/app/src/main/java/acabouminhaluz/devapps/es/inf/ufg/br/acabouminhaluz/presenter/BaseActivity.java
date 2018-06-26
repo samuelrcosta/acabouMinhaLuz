@@ -1,5 +1,6 @@
 package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;

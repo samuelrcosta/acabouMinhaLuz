@@ -8,7 +8,7 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.list.TodoListActivity;
+import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.home.home;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.R;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.data.EasySharedPreferences;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.FormProblemException;
@@ -97,7 +97,7 @@ public class LoginActivity extends BaseActivity {
     }
 
     private void goToHome() {
-        Intent intent = new Intent(this,TodoListActivity.class);
+        Intent intent = new Intent(this,home.class);
         startActivity(intent);
         finish();
 

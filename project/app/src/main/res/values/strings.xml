@@ -10,4 +10,8 @@
     <string name="error_email_empty">Email não pode ser vazio</string>
     <string name="error_password_empty">Senha não pode ser vazia</string>
     <string name="error_password_small">Senha não pode ter menos que 6 caracteres</string>
+    <string name="requesting_permisisons">Que tal conceder acesso a sua localização? Com a concessão, " +
+            "você poderá cadastrar suas reclamações e contribuir para uma melhor prestação de serviço! </string>
+    <string name="coarse_location_permission">Manifest.permission.ACCESS_COARSE_LOCATION</string>
+    <string name="fine_location_permission">Manifest.permission.ACCESS_FINE_LOCATION</string>
 </resources>
