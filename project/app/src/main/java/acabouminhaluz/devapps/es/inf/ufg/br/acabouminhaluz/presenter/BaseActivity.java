@@ -12,10 +12,6 @@ import com.afollestad.materialdialogs.MaterialDialog;
 
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.R;
 
-/**
- * Created by marceloquinta on 10/02/17.
- */
-
 public class BaseActivity extends AppCompatActivity {
 
     MaterialDialog dialog;

@@ -3,6 +3,7 @@ package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.login;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.util.Log;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -14,6 +15,7 @@ import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.data.EasySharedPrefer
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.FormProblemException;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.User;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.BaseActivity;
+import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.register.RegisterActivity;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.web.WebLogin;
 
 public class LoginActivity extends BaseActivity {
@@ -61,6 +63,12 @@ public class LoginActivity extends BaseActivity {
         tryLogin(password,email);
     }
 
+    public void goToRegister(View v){
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
     private void checkPassword() throws FormProblemException{
         String password = getStringFromEdit(R.id.password);
         if("".equals(password)){
@@ -75,7 +83,7 @@ public class LoginActivity extends BaseActivity {
     private void checkEmail() throws FormProblemException{
         String email = getStringFromEdit(R.id.username);
         if("".equals(email)){
-            throw new FormProblemException(getString(R.string.error_password_empty));
+            throw new FormProblemException(getString(R.string.error_email_empty));
         }
     }
 
@@ -96,11 +104,10 @@ public class LoginActivity extends BaseActivity {
         EasySharedPreferences.setStringFromKey(this,EasySharedPreferences.KEY_TOKEN,user.getToken());
     }
 
-    private void goToHome() {
-        Intent intent = new Intent(this,home.class);
+    private void goToHome(){
+        Intent intent = new Intent(this, home.class);
         startActivity(intent);
         finish();
-
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)

@@ -2,6 +2,7 @@ package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.home;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -30,7 +31,7 @@ public class home extends BaseActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private Location lastKnownLocation;
-    private String[] permissions = {getString(R.string.fine_location_permission), getString(R.string.coarse_location_permission)};
+    private String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};
     private final int LOCATION_PERMISSION_CODE = 200;
     private FusedLocationProviderClient mFusedLocationClient;
 

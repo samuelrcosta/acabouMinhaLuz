@@ -5,9 +5,6 @@ import android.support.v4.app.Fragment;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 
-/**
- * Created by marceloquinta on 10/02/17.
- */
 public class BaseFragment extends Fragment {
 
     MaterialDialog dialog;

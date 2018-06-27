@@ -1,16 +1,45 @@
 package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model;
 
 /**
- * Created by marceloquinta on 03/02/17.
+ * Created by Samuel on 27/06/2018.
  */
-
 public class User {
+
+    private String id;
 
     private String name;
 
     private String email;
 
+    private String CPF;
+
+    private String password;
+
     private String token;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getCPF() {
+        return CPF;
+    }
+
+    public void setCPF(String CPF) {
+        this.CPF = CPF;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public String getName() {
         return name;

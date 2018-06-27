@@ -10,13 +10,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     android:background="@color/background"
-    tools:context=".presenter.login.LoginActivity">
+    tools:context=".presenter.register.RegisterActivity">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="56dp"
+        android:paddingTop="20dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
 
@@ -24,11 +24,48 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="20dp"
             android:text="@string/app_name"
             android:textColor="@color/yellow"
             android:fontFamily="@font/anton_font"
             android:textSize="@dimen/principal_title_size" />
+
+        <!-- Name Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            >
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/hint_name"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/label_size"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- CPF Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            >
+            <EditText
+                android:id="@+id/cpf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/hint_cpf"
+                android:textColorHint="@color/yellow"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/label_size"
+                />
+        </android.support.design.widget.TextInputLayout>
 
         <!-- Email Label -->
         <android.support.design.widget.TextInputLayout
@@ -38,7 +75,7 @@
             android:layout_marginBottom="8dp"
             >
             <EditText
-                android:id="@+id/username"
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -59,9 +96,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
+                android:textSize="@dimen/label_size"
                 android:textColor="@color/yellow"
-                android:hint="@string/hint_password"
-                android:textSize="@dimen/label_size"/>
+                android:hint="@string/hint_password"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton
@@ -71,24 +108,24 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
             android:padding="12dp"
-            android:onClick="login"
-            android:backgroundTint="@color/yellow"
-            android:textColor="@color/black"
-            android:text="Login"/>
+            android:onClick="register"
+            android:backgroundTint="@color/buttonBackground"
+            android:textColor="@color/buttonColor"
+            android:text="Cadastrar"/>
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Ainda não possui uma conta?"
+            android:text="Já possui uma conta?"
             android:gravity="center"
             android:textSize="16dip"/>
-        <TextView android:id="@+id/link_signup"
+        <TextView android:id="@+id/link_signin"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            android:text="Cadastrar"
-            android:onClick="goToRegister"
+            android:text="Login"
             android:clickable="true"
+            android:onClick="loginRedirectgoToLogin"
             android:gravity="center"
             android:textSize="16dip"
             android:textColor="@color/yellow"/>
@@ -96,13 +133,4 @@
 
     </LinearLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:clickable="true"
-        android:src="@drawable/ic_add_24dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"/>
 </RelativeLayout>

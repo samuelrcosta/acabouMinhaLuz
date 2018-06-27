@@ -1,6 +1,5 @@
 package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.web;
 
-import android.util.Log;
 
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONException;
@@ -10,18 +9,21 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.User;
+import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.MessageEvent;
 import okhttp3.Response;
 
+public class WebRegister extends WebConnection {
 
-public class WebLogin extends WebConnection {
-
-    private static final String SERVICE = "login";
+    private static final String SERVICE = "cadastro";
+    private String name;
+    private String CPF;
     private String email;
     private String password;
 
-    public WebLogin(String email, String password) {
+    public WebRegister(String name, String CPF, String email, String password) {
         super(SERVICE);
+        this.name = name;
+        this.CPF = CPF;
         this.email = email;
         this.password = password;
     }
@@ -29,6 +31,8 @@ public class WebLogin extends WebConnection {
     @Override
     String getRequestContent() {
         Map<String,String> requestMap = new HashMap<>();
+        requestMap.put("nome", name);
+        requestMap.put("CPF", CPF);
         requestMap.put("email", email);
         requestMap.put("senha", password);
 
@@ -45,18 +49,11 @@ public class WebLogin extends WebConnection {
             responseBody = response.body().string();
             JSONObject object = new JSONObject(responseBody);
             String status = object.getString("status");
-            if(status.equals("ok")){
-                User user = new User();
-                user.setEmail(email);
-                user.setId(object.getString("id"));
-                user.setCPF(object.getString("CPF"));
-                user.setPassword(object.getString("senha"));
-                user.setName(object.getString("nome"));
-                user.setToken(object.getString("token"));
-                EventBus.getDefault().post(user);
-            }else {
+            if(status.equals("error")){
                 String error = object.getString("message");
                 EventBus.getDefault().post(new Exception(error));
+            }else{
+                EventBus.getDefault().post(new MessageEvent("Ok"));
             }
         } catch (IOException e) {
             EventBus.getDefault().post(e);

@@ -1,12 +1,19 @@
 <resources>
-    <string name="app_name">Acabou minha luz</string>
+    <string name="app_name">Acabou Minha Luz</string>
     <string name="title_activity_home">Home</string>
 
-    <string name="hint_username">Nome de usuário ou email</string>
+    <string name="hint_name">Nome</string>
+    <string name="hint_cpf">CPF</string>
+    <string name="hint_email">Email</string>
     <string name="hint_password">Senha</string>
     <string name="load_login">Verificando credenciais</string>
+    <string name="load_register">Aguarde o cadastro</string>
     <string name="load_tasks">Recuperando tarefas</string>
     <string name="button_in">Entrar</string>
+    <string name="error_name_empty">Preencha seu nome</string>
+    <string name="error_name_small">O nome deve ter mais de 3 caracteres</string>
+    <string name="error_cpf_empty">Preencha seu CPF</string>
+    <string name="error_cpf_invalid">CPF Inválido</string>
     <string name="error_email_empty">Email não pode ser vazio</string>
     <string name="error_password_empty">Senha não pode ser vazia</string>
     <string name="error_password_small">Senha não pode ter menos que 6 caracteres</string>

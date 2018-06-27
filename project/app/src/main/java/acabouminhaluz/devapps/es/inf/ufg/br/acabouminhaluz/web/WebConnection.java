@@ -15,15 +15,11 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-/**
- * Created by marceloquinta on 10/02/17.
- */
 
 public abstract class WebConnection {
 
-    private static final String BASE_URL = "http://private-54aacf-todo87.apiary-mock.com/";
-    public static final MediaType JSON
-            = MediaType.parse("application/json; charset=utf-8");
+    private static final String BASE_URL = "http://private-051dd-teste694.apiary-mock.com/";
+    public static final MediaType JSON = MediaType.parse("application/json;charset=utf-8");
     private String serviceName;
 
     public WebConnection(String serviceName){
