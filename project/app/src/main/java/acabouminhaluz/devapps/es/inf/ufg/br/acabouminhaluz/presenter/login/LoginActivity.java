@@ -90,6 +90,7 @@ public class LoginActivity extends BaseActivity {
     private void tryLogin(String password, String email) {
         WebLogin webLogin = new WebLogin(email,password);
         webLogin.call();
+        //goToHome();
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
