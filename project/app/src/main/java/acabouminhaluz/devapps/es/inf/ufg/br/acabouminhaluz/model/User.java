@@ -17,6 +17,8 @@ public class User {
 
     private String token;
 
+    private String image;
+
     public String getId() {
         return id;
     }
@@ -64,4 +66,8 @@ public class User {
     public void setToken(String token) {
         this.token = token;
     }
+
+    public String getImage() { return image; }
+
+    public void setImage(String image) { this.image = image; }
 }

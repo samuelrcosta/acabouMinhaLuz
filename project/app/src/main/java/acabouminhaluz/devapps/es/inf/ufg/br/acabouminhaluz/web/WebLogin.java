@@ -50,9 +50,9 @@ public class WebLogin extends WebConnection {
                 user.setEmail(email);
                 user.setId(object.getString("id"));
                 user.setCPF(object.getString("CPF"));
-                user.setPassword(object.getString("senha"));
                 user.setName(object.getString("nome"));
                 user.setToken(object.getString("token"));
+                user.setImage(object.getString("image"));
                 EventBus.getDefault().post(user);
             }else {
                 String error = object.getString("message");
