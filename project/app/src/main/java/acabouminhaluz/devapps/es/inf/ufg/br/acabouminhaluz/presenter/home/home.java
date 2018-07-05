@@ -9,6 +9,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -27,8 +28,16 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+import java.util.List;
+
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.R;
+import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.Marker;
+import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.User;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.BaseActivity;
+import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.web.WebMarkers;
 
 public class home extends FragmentActivity implements OnMapReadyCallback {
 
@@ -75,6 +84,10 @@ public class home extends FragmentActivity implements OnMapReadyCallback {
             mMap.setMyLocationEnabled(true);
 
         }
+
+
+
+
         LatLng userLatLng = new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude());
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 15));
 
@@ -90,6 +103,41 @@ public class home extends FragmentActivity implements OnMapReadyCallback {
 
         mMap.addMarker(markerOptions);
 
+    }
+
+    private void getMarkers(LatLng userLatLng){
+        double latitude = userLatLng.latitude;
+        double longitude = userLatLng.longitude;
+
+        WebMarkers markers = new WebMarkers(String.valueOf(latitude), String.valueOf(longitude));
+
+        markers.call();
+
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(List<Marker> markers) {
+        for(Marker marker : markers){
+            LatLng userLatLng = new LatLng(Double.parseDouble(marker.getLatitude_problema()),
+                    Double.parseDouble(marker.getLongitude_problema()));
+
+
+            BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.mipmap.icon);
+            MarkerOptions markerOptions = new MarkerOptions()
+                    .position(userLatLng)
+                    .title("INF")
+                    .snippet("teste teste teste")
+                    .icon(icon)
+                    .flat(true);
+
+            mMap.addMarker(markerOptions);
+        }
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(Exception exception) {
+        Snackbar.make(findViewById(android.R.id.content),exception.getMessage(),
+                Snackbar.LENGTH_LONG).show();
     }
 
 }
