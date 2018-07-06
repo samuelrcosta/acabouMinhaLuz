@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Map;
 
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.Marker;
-import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.User;
 import okhttp3.Response;
 
 public class WebMarkers extends WebConnection {
@@ -47,10 +46,11 @@ public class WebMarkers extends WebConnection {
             responseBody = response.body().string();
             JSONObject object = new JSONObject(responseBody);
             String status = object.getString("status");
+            //String status = "error";
             if(status.equals("ok")) {
 
                 JSONArray reclamacoesAsJSON = object.getJSONArray("reclamacoesProximas");
-                List<Marker> markers = new ArrayList<>();
+                ArrayList<Marker> markers = new ArrayList<>();
 
                 for (int index = 0; index < reclamacoesAsJSON.length(); index++) {
                     JSONObject reclamacaoAsJSON = reclamacoesAsJSON.getJSONObject(index);
@@ -68,6 +68,7 @@ public class WebMarkers extends WebConnection {
                 EventBus.getDefault().post(markers);
             }else{
                     String error = object.getString("message");
+                    //String error = "Chegou aqui";
                     EventBus.getDefault().post(new Exception(error));
                 }
 
