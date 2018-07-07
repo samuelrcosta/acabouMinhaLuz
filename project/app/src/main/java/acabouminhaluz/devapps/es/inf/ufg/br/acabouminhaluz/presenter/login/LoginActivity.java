@@ -3,13 +3,12 @@ package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.login;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.util.Log;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.home.home;
+import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.home.HomeActivity;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.R;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.data.EasySharedPreferences;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.FormProblemException;
@@ -27,6 +26,9 @@ public class LoginActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        // Check if this user is logged
+        checkLogged();
+
         setStringFromEdit(R.id.username,EasySharedPreferences.getStringFromKey(
                 this, EasySharedPreferences.KEY_EMAIL));
     }
@@ -41,6 +43,13 @@ public class LoginActivity extends BaseActivity {
     protected void onStop() {
         super.onStop();
         EventBus.getDefault().unregister(this);
+    }
+
+    private void checkLogged(){
+        String token = EasySharedPreferences.getStringFromKey(this, EasySharedPreferences.KEY_TOKEN);
+        if(!token.equals("")){
+            goToHome();
+        }
     }
 
     public void login(View v){
@@ -103,10 +112,13 @@ public class LoginActivity extends BaseActivity {
     private void storeCredentials(User user){
         EasySharedPreferences.setStringFromKey(this,EasySharedPreferences.KEY_EMAIL,user.getEmail());
         EasySharedPreferences.setStringFromKey(this,EasySharedPreferences.KEY_TOKEN,user.getToken());
+        EasySharedPreferences.setStringFromKey(this,EasySharedPreferences.KEY_NAME,user.getName());
+        EasySharedPreferences.setStringFromKey(this,EasySharedPreferences.KEY_CPF,user.getCPF());
+        EasySharedPreferences.setStringFromKey(this,EasySharedPreferences.KEY_IMAGE,user.getImage());
     }
 
     private void goToHome(){
-        Intent intent = new Intent(this, home.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
         finish();
     }

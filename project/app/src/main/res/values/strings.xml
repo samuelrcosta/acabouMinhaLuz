@@ -21,4 +21,7 @@
             "você poderá cadastrar suas reclamações e contribuir para uma melhor prestação de serviço! </string>
     <string name="coarse_location_permission">Manifest.permission.ACCESS_COARSE_LOCATION</string>
     <string name="fine_location_permission">Manifest.permission.ACCESS_FINE_LOCATION</string>
+    <string name="label_map">Mapa</string>
+    <string name="label_reclamacoes">Reclamações</string>
+    <string name="profile_toolbar">Meus Dados</string>
 </resources>

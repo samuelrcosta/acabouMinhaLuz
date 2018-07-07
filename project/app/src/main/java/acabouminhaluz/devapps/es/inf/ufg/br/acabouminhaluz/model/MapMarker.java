@@ -1,38 +1,20 @@
 package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model;
 
-public class Marker {
+public class MapMarker {
 
-    private String id_reclamacao;
-    private String data_registro;
-    private String hora_registro;
+    private String usuario;
     private String data_problema;
     private String hora_problema;
     private String latitude_problema;
     private String longitude_problema;
     private String obs;
 
-    public String getId_reclamacao() {
-        return id_reclamacao;
+    public String getUsuario() {
+        return usuario;
     }
 
-    public void setId_reclamacao(String id_reclamacao) {
-        this.id_reclamacao = id_reclamacao;
-    }
-
-    public String getData_registro() {
-        return data_registro;
-    }
-
-    public void setData_registro(String data_registro) {
-        this.data_registro = data_registro;
-    }
-
-    public String getHora_registro() {
-        return hora_registro;
-    }
-
-    public void setHora_registro(String hora_registro) {
-        this.hora_registro = hora_registro;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
     public String getData_problema() {

@@ -1,7 +1,5 @@
 package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.web;
 
-import com.google.android.gms.maps.model.LatLng;
-
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -10,10 +8,9 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.Marker;
+import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.MapMarker;
 import okhttp3.Response;
 
 public class WebMarkers extends WebConnection {
@@ -46,33 +43,27 @@ public class WebMarkers extends WebConnection {
             responseBody = response.body().string();
             JSONObject object = new JSONObject(responseBody);
             String status = object.getString("status");
-            //String status = "error";
             if(status.equals("ok")) {
 
                 JSONArray reclamacoesAsJSON = object.getJSONArray("reclamacoesProximas");
-                ArrayList<Marker> markers = new ArrayList<>();
+                ArrayList<MapMarker> mapMarkers = new ArrayList<>();
 
                 for (int index = 0; index < reclamacoesAsJSON.length(); index++) {
                     JSONObject reclamacaoAsJSON = reclamacoesAsJSON.getJSONObject(index);
-                    Marker marker = new Marker();
-                    marker.setId_reclamacao(reclamacaoAsJSON.getString("id_reclamacao"));
-                    marker.setData_registro(reclamacaoAsJSON.getString("data_registro"));
-                    marker.setHora_registro(reclamacaoAsJSON.getString("hora_registro"));
-                    marker.setData_problema(reclamacaoAsJSON.getString("data_problema"));
-                    marker.setHora_problema(reclamacaoAsJSON.getString("hora_problema"));
-                    marker.setLatitude_problema(reclamacaoAsJSON.getString("latitude_problema"));
-                    marker.setLongitude_problema(reclamacaoAsJSON.getString("longitude_problema"));
-
-                    markers.add(marker);
+                    MapMarker mapMarker = new MapMarker();
+                    mapMarker.setUsuario(reclamacaoAsJSON.getString("usuario"));
+                    mapMarker.setData_problema(reclamacaoAsJSON.getString("data_problema"));
+                    mapMarker.setHora_problema(reclamacaoAsJSON.getString("hora_problema"));
+                    mapMarker.setLatitude_problema(reclamacaoAsJSON.getString("latitude_problema"));
+                    mapMarker.setLongitude_problema(reclamacaoAsJSON.getString("longitude_problema"));
+                    mapMarker.setObs(reclamacaoAsJSON.getString("obs"));
+                    mapMarkers.add(mapMarker);
                 }
-                EventBus.getDefault().post(markers);
+                EventBus.getDefault().post(mapMarkers);
             }else{
-                    String error = object.getString("message");
-                    //String error = "Chegou aqui";
-                    EventBus.getDefault().post(new Exception(error));
-                }
-
-
+                String error = object.getString("message");
+                EventBus.getDefault().post(new Exception(error));
+            }
         } catch (IOException e) {
             EventBus.getDefault().post(e);
         } catch (JSONException e) {

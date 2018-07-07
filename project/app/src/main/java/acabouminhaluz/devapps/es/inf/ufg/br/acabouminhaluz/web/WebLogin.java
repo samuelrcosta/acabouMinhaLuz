@@ -48,7 +48,6 @@ public class WebLogin extends WebConnection {
             if(status.equals("ok")){
                 User user = new User();
                 user.setEmail(email);
-                user.setId(object.getString("id"));
                 user.setCPF(object.getString("CPF"));
                 user.setName(object.getString("nome"));
                 user.setToken(object.getString("token"));

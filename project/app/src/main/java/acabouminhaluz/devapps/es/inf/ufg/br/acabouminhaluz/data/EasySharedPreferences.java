@@ -8,11 +8,13 @@ import android.support.v4.content.SharedPreferencesCompat;
 /**
  * Created by marceloquinta on 10/02/17.
  */
-
 public class EasySharedPreferences {
 
     public static String KEY_EMAIL = "email";
     public static String KEY_TOKEN = "token";
+    public static String KEY_NAME = "name";
+    public static String KEY_CPF = "cpf";
+    public static String KEY_IMAGE = "image";
 
     public static String getStringFromKey(Context context, String key){
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(context);
