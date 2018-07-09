@@ -15,6 +15,7 @@ import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.FormProblemExce
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.User;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.BaseActivity;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.register.RegisterActivity;
+import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.utils.DownloadImageTask;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.web.WebLogin;
 
 public class LoginActivity extends BaseActivity {

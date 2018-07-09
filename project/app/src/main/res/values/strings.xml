@@ -24,4 +24,13 @@
     <string name="label_map">Mapa</string>
     <string name="label_reclamacoes">Reclamações</string>
     <string name="profile_toolbar">Meus Dados</string>
+    <string name="profile_tutorial">Pressione a imagem para alterar</string>
+    <string name="save_button">Salvar</string>
+    <string name="logout_button">Logout</string>
+    <string name="hint_old_password">Senha atual</string>
+    <string name="hint_new_password">Nova Senha</string>
+    <string name="error_new_passoword_small">A nova senha deve ter no mínimo 6 caracteres</string>
+    <string name="load_edit_profile">Aguarde</string>
+    <string name="load">Aguarde</string>
+    <string name="new_password_tutorial">Preencha o campo abaixo para alterar a senha</string>
 </resources>
