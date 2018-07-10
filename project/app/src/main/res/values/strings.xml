@@ -33,4 +33,7 @@
     <string name="load_edit_profile">Aguarde</string>
     <string name="load">Aguarde</string>
     <string name="new_password_tutorial">Preencha o campo abaixo para alterar a senha</string>
+    <string name="reclaim_tutorial">Preencha os campos para fazer uma reclamação</string>
+    <string name="hint_obs">Observações</string>
+    <string name="mark_reclaim_tutorial">Marque no mapa a sua posição exata</string>
 </resources>

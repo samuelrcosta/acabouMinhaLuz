@@ -1,4 +1,4 @@
-package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.home;
+package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.reclaim;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.location.Location;
@@ -17,6 +18,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
@@ -40,6 +42,10 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.R;
@@ -47,13 +53,14 @@ import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.data.EasySharedPrefer
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.MapMarker;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.MessageEvent;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.claims.ClaimsActivity;
+import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.home.HomeActivity;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.login.LoginActivity;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.profile.ProfileActivity;
-import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.reclaim.ReclaimActivity;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.utils.ImageUtil;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.web.WebMarkers;
+import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.utils.DownloadImageTask;
 
-public class HomeActivity extends FragmentActivity implements OnMapReadyCallback {
+public class ReclaimActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private Location lastKnownLocation;
@@ -63,17 +70,15 @@ public class HomeActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_reclaim);
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        // Load user avatar image
-        loadAvatarImage();
-        // Start navigation controls icons
-        navigatitionControls();
+        // Add listener to toobar back button
+        toolbarListener();
     }
 
     @Override
@@ -119,16 +124,12 @@ public class HomeActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onMapLoaded() {
                 LatLng userLatLng = new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude());
-                getMarkers(userLatLng);
                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 15));
             }
         });
 
-        // Multiline snippet
-        setMultilineSinippets();
-
         // Disable zoom and move
-        //disableMapMove();
+        disableMapMove();
     }
 
     private void disableMapMove(){
@@ -137,66 +138,14 @@ public class HomeActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.getUiSettings().setRotateGesturesEnabled(false);
     }
 
-    private void setMultilineSinippets(){
-        mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
-
+    private void toolbarListener(){
+        Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
-            public View getInfoWindow(Marker arg0) {
-                return null;
-            }
-
-            @Override
-            public View getInfoContents(Marker marker) {
-
-                Context context = getApplicationContext(); //or getActivity(), YourActivity.this, etc.
-
-                LinearLayout info = new LinearLayout(context);
-                info.setOrientation(LinearLayout.VERTICAL);
-
-                TextView title = new TextView(context);
-                title.setTextColor(Color.BLACK);
-                title.setGravity(Gravity.CENTER);
-                title.setTypeface(null, Typeface.BOLD);
-                title.setText(marker.getTitle());
-
-                TextView snippet = new TextView(context);
-                snippet.setTextColor(Color.GRAY);
-                snippet.setText(marker.getSnippet());
-
-                info.addView(title);
-                info.addView(snippet);
-
-                return info;
+            public void onClick(View v) {
+                goToHome();
             }
         });
-    }
-
-    private void getMarkers(LatLng userLatLng){
-        double latitude = userLatLng.latitude;
-        double longitude = userLatLng.longitude;
-
-        WebMarkers markers = new WebMarkers(String.valueOf(latitude), String.valueOf(longitude));
-        markers.call();
-    }
-
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onMessageEvent(ArrayList<MapMarker> mapMarkers) {
-        BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.mipmap.icon);
-
-        for(MapMarker mapMarker : mapMarkers){
-            LatLng userLatLng = new LatLng(Double.parseDouble(mapMarker.getLatitude_problema()),
-                    Double.parseDouble(mapMarker.getLongitude_problema()));
-
-            MarkerOptions markerOptions = new MarkerOptions()
-                    .position(userLatLng)
-                    .title("Reclamação")
-                    .snippet(mapMarker.getUsuario() + "\n" + mapMarker.getData_problema() + "\n" + mapMarker.getHora_problema())
-                    .icon(icon)
-                    .flat(true);
-
-            mMap.addMarker(markerOptions);
-        }
-
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
@@ -212,47 +161,10 @@ public class HomeActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    public void navigatitionControls(){
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.action_map);
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.action_map:
-                    break;
-                case R.id.action_claims:
-                    goToClaims();
-                    break;
-            }
-            return true;
-            }
-        });
-    }
-
-    public void goToClaims(){
-        Intent intent = new Intent(this, ClaimsActivity.class);
+    public void goToHome(){
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
         finish();
-    }
-
-    public void goToProfile(View v){
-        Intent intent = new Intent(this, ProfileActivity.class);
-        startActivity(intent);
-        finish();
-    }
-
-    public void goToReclaim(View v){
-        Intent intent = new Intent(this, ReclaimActivity.class);
-        startActivity(intent);
-        finish();
-    }
-
-    public void loadAvatarImage(){
-        de.hdodenhof.circleimageview.CircleImageView content = (de.hdodenhof.circleimageview.CircleImageView)findViewById(R.id.image);
-        // Get base64 image and convert to bitmap
-        Bitmap image = ImageUtil.convert(EasySharedPreferences.getStringFromKey(this, EasySharedPreferences.KEY_IMAGE));
-        content.setImageBitmap(image);
     }
 
     public void logoff(){

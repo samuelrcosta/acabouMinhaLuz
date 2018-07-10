@@ -64,6 +64,10 @@
             android:theme="@style/AppThemeWithoutActionBar"
             />
 
+        <activity android:name=".presenter.reclaim.ReclaimActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppThemeWithoutActionBar"
+            />
 
     </application>
 </manifest>
