@@ -95,6 +95,22 @@ public class HomeActivity extends FragmentActivity implements OnMapReadyCallback
                 LOCATION_PERMISSION_CODE);
     }
 
+    @Override
+    public void onRequestPermissionsResult(int permsRequestCode, String[] permissions, int[] grantResults){
+
+        switch(permsRequestCode){
+            case LOCATION_PERMISSION_CODE:
+                if(grantResults[0]==PackageManager.PERMISSION_GRANTED){
+                    finish();
+                    startActivity(getIntent());
+                }else{
+                    System.exit(1);
+                }
+                break;
+        }
+
+    }
+
     private boolean checkPermissions() {
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
@@ -114,22 +130,21 @@ public class HomeActivity extends FragmentActivity implements OnMapReadyCallback
             lastKnownLocation = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
             mMap.setMyLocationEnabled(true);
 
+            mMap.setOnMapLoadedCallback(new GoogleMap.OnMapLoadedCallback(){
+                @Override
+                public void onMapLoaded() {
+                    LatLng userLatLng = new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude());
+                    getMarkers(userLatLng);
+                    mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 15));
+                }
+            });
+
+            // Multiline snippet
+            setMultilineSinippets();
+
+            // Disable zoom and move
+            disableMapMove();
         }
-
-        mMap.setOnMapLoadedCallback(new GoogleMap.OnMapLoadedCallback(){
-            @Override
-            public void onMapLoaded() {
-                LatLng userLatLng = new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude());
-                getMarkers(userLatLng);
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 15));
-            }
-        });
-
-        // Multiline snippet
-        setMultilineSinippets();
-
-        // Disable zoom and move
-        disableMapMove();
     }
 
     private void disableMapMove(){

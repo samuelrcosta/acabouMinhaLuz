@@ -18,7 +18,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/without_light"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/without_light_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <!--

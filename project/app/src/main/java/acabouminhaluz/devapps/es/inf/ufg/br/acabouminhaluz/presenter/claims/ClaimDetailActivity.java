@@ -122,9 +122,6 @@ public class ClaimDetailActivity extends FragmentActivity implements OnMapReadyC
             @Override
             public void onMapLoaded() {
                 loadClaimData();
-                LatLng userLatLng = new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude());
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 17));
-                //setLatLong(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude());
             }
         });
 
@@ -152,7 +149,7 @@ public class ClaimDetailActivity extends FragmentActivity implements OnMapReadyC
 
         // Move map to claim position
         LatLng position = new LatLng(Double.parseDouble(latitude), Double.parseDouble(longitude));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 10));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 17));
 
         int height = 100;
         int width = 100;
