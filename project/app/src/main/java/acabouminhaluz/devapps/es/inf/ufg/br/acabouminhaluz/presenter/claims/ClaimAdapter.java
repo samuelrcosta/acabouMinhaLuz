@@ -1,63 +1,72 @@
 package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.claims;
 
 import android.content.Context;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.TextView;
-
-import java.util.ArrayList;
-
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.R;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.Reclamacao;
 
-public class ClaimAdapter extends BaseAdapter {
-    private Context mContext;
-    private LayoutInflater mInflater;
-    private ArrayList<Reclamacao> mDataSource;
 
-    public ClaimAdapter(Context context, ArrayList<Reclamacao> items) {
-        mContext = context;
-        mDataSource = items;
-        mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+import java.util.List;
+
+
+
+public class ClaimAdapter extends RecyclerView.Adapter<ClaimAdapter.ReclamacaoViewHolder> {
+
+
+    //this context we will use to inflate the layout
+    private Context context;
+
+    //we are storing all the products in a list
+    private List<Reclamacao> reclamacaos;
+
+    //getting the context and product list with constructor
+    public ClaimAdapter(Context context, List<Reclamacao> reclamacaos) {
+        this.context = context;
+        this.reclamacaos = reclamacaos;
     }
 
-    //1
     @Override
-    public int getCount() {
-        return mDataSource.size();
+    public ReclamacaoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        //inflating and returning our view holder
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View view = inflater.inflate(R.layout.activity_list_claims, null);
+        return new ReclamacaoViewHolder(view);
     }
 
-    //2
     @Override
-    public Object getItem(int position) {
-        return mDataSource.get(position);
+    public void onBindViewHolder(ReclamacaoViewHolder holder, int position) {
+
+        Reclamacao reclamacao = reclamacaos.get(position);
+
+        holder.textViewData.setText(reclamacaos.get(position).getData());
+        holder.textViewHora.setText(reclamacaos.get(position).getHora());
+        holder.textViewObs.setText(reclamacaos.get(position).getObs());
+
+
     }
 
-    //3
+
     @Override
-    public long getItemId(int position) {
-        return position;
+    public int getItemCount() {
+        return reclamacaos.size();
     }
 
-    //4
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        // Get view for row item
-        View rowView = mInflater.inflate(R.layout.activity_list_claims, parent, false);
 
-        TextView dataTextView = (TextView) rowView.findViewById(R.id.data);
-        TextView horaTextView = (TextView) rowView.findViewById(R.id.hora);
-        TextView obsTextView = (TextView) rowView.findViewById(R.id.obs);
+    class ReclamacaoViewHolder extends RecyclerView.ViewHolder {
 
-        Reclamacao reclamacao = (Reclamacao) getItem(position);
+        TextView textViewData, textViewHora, textViewObs;
 
-        dataTextView.setText(reclamacao.getData());
-        horaTextView.setText(reclamacao.getHora());
-        obsTextView.setText(reclamacao.getObs());
+        public ReclamacaoViewHolder(View itemView) {
+            super(itemView);
 
-
-        return rowView;
+            textViewData = itemView.findViewById(R.id.data);
+            textViewHora = itemView.findViewById(R.id.hora);
+            textViewObs = itemView.findViewById(R.id.obs);
+        }
     }
 }
