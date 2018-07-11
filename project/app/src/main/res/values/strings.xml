@@ -41,4 +41,6 @@
     <string name="error_date_empty">Preencha a data</string>
     <string name="error_hour_empty">Preencha a hora</string>
     <string name="error_location_empty">Marque no mapa sua localização</string>
+    <string name="claim_detail_toolbar">Reclamação</string>
+    <string name="claims_toolbar">Minhas Reclamações</string>
 </resources>

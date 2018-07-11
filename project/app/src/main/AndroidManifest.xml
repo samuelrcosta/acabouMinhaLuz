@@ -16,7 +16,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/without_light"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -55,6 +55,11 @@
             >
         </activity>
         <activity android:name=".presenter.claims.ClaimsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppThemeWithoutActionBar"
+            />
+
+        <activity android:name=".presenter.claims.ClaimDetailActivity"
             android:label="@string/app_name"
             android:theme="@style/AppThemeWithoutActionBar"
             />

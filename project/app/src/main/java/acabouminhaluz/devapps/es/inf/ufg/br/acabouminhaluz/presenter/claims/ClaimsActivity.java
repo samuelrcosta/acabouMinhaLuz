@@ -1,5 +1,6 @@
 package acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.claims;
 
+import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
@@ -8,6 +9,10 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.Snackbar;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
@@ -32,10 +37,15 @@ import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.web.WebClaims;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.web.WebProfileEdit;
 
 public class ClaimsActivity extends BaseActivity {
+    private ListView mListView;
+    private ArrayList<Reclamacao> reclamacoes;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_claims);
+
+        mListView = (ListView)findViewById(R.id.list_view);
 
         // Start navigation controls icons
         navigatitionControls();
@@ -85,13 +95,49 @@ public class ClaimsActivity extends BaseActivity {
         webClaims.call();
     }
 
+    public void createList(){
+        String[] listItems = new String[reclamacoes.size()];
+
+        for(int i = 0; i < reclamacoes.size(); i++){
+            Reclamacao reclamacao = reclamacoes.get(i);
+            listItems[i] = reclamacao.getData();
+        }
+
+        ClaimAdapter adapter = new ClaimAdapter(this, reclamacoes);
+        mListView.setAdapter(adapter);
+
+        final Context context = this;
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Reclamacao selectedItem = reclamacoes.get(position);
+
+                Intent detailIntent = new Intent(context, ClaimDetailActivity.class);
+
+                detailIntent.putExtra("id", selectedItem.getId());
+                detailIntent.putExtra("data", selectedItem.getData());
+                detailIntent.putExtra("hora", selectedItem.getHora());
+                detailIntent.putExtra("obs", selectedItem.getObs());
+                detailIntent.putExtra("latitude", selectedItem.getLatitude());
+                detailIntent.putExtra("longitude", selectedItem.getLongitude());
+
+                startActivity(detailIntent);
+            }
+
+        });
+    }
+
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(ArrayList<Reclamacao> reclamacoes) {
+        this.reclamacoes = new ArrayList<Reclamacao>();
         ReclamacaoDAO dao = new ReclamacaoDAO(this);
         for(int i = 0; i < reclamacoes.size(); i++){
             dao.delete(reclamacoes.get(i));
             dao.create(reclamacoes.get(i));
+            this.reclamacoes.add(reclamacoes.get(i));
         }
+        createList();
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)

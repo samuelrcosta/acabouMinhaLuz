@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.BitmapDrawable;
 import android.location.Location;
 import android.location.LocationManager;
 import android.support.annotation.NonNull;
@@ -128,10 +129,11 @@ public class HomeActivity extends FragmentActivity implements OnMapReadyCallback
         setMultilineSinippets();
 
         // Disable zoom and move
-        //disableMapMove();
+        disableMapMove();
     }
 
     private void disableMapMove(){
+        mMap.getUiSettings().setMyLocationButtonEnabled(false);
         mMap.getUiSettings().setScrollGesturesEnabled(false);
         mMap.getUiSettings().setZoomGesturesEnabled(false);
         mMap.getUiSettings().setRotateGesturesEnabled(false);
@@ -181,7 +183,11 @@ public class HomeActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(ArrayList<MapMarker> mapMarkers) {
-        BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.mipmap.icon);
+        int height = 100;
+        int width = 100;
+        BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.map_icon);
+        Bitmap b=bitmapdraw.getBitmap();
+        Bitmap smallMarker = Bitmap.createScaledBitmap(b, width, height, false);
 
         for(MapMarker mapMarker : mapMarkers){
             LatLng userLatLng = new LatLng(Double.parseDouble(mapMarker.getLatitude_problema()),
@@ -191,7 +197,7 @@ public class HomeActivity extends FragmentActivity implements OnMapReadyCallback
                     .position(userLatLng)
                     .title("Reclamação")
                     .snippet(mapMarker.getUsuario() + "\n" + mapMarker.getData_problema() + "\n" + mapMarker.getHora_problema())
-                    .icon(icon)
+                    .icon(BitmapDescriptorFactory.fromBitmap(smallMarker))
                     .flat(true);
 
             mMap.addMarker(markerOptions);

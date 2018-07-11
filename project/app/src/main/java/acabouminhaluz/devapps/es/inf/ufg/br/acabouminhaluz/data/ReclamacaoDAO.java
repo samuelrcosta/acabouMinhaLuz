@@ -93,7 +93,7 @@ public class ReclamacaoDAO extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_RECLAIMS, new String[] { ROW_ID, ROW_DATA, ROW_HORA, ROW_OBS, ROW_LATIDUDE, ROW_LONGITUDE },
-                ROW_ID + "=?",
+                ROW_ID + "= ?",
                 new String[] { String.valueOf(id) },
                 null,
                 null,
@@ -103,7 +103,7 @@ public class ReclamacaoDAO extends SQLiteOpenHelper {
         if (cursor != null) {
             cursor.moveToFirst();
             reclamacao = new Reclamacao();
-            reclamacao.setId(Integer.parseInt(cursor.getString(0)));
+            reclamacao.setId(cursor.getInt(0));
             reclamacao.setData(cursor.getString(1));
             reclamacao.setHora(cursor.getString(2));
             reclamacao.setObs(cursor.getString(3));
