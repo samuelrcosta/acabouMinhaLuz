@@ -36,4 +36,9 @@
     <string name="reclaim_tutorial">Preencha os campos para fazer uma reclamação</string>
     <string name="hint_obs">Observações</string>
     <string name="mark_reclaim_tutorial">Marque no mapa a sua posição exata</string>
+    <string name="hint_data">Data</string>
+    <string name="hint_hour">Hora</string>
+    <string name="error_date_empty">Preencha a data</string>
+    <string name="error_hour_empty">Preencha a hora</string>
+    <string name="error_location_empty">Marque no mapa sua localização</string>
 </resources>

@@ -30,8 +30,7 @@ public class LoginActivity extends BaseActivity {
         // Check if this user is logged
         checkLogged();
 
-        setStringFromEdit(R.id.username,EasySharedPreferences.getStringFromKey(
-                this, EasySharedPreferences.KEY_EMAIL));
+        setStringFromEdit(R.id.username,EasySharedPreferences.getStringFromKey(this, EasySharedPreferences.KEY_EMAIL));
     }
 
     @Override

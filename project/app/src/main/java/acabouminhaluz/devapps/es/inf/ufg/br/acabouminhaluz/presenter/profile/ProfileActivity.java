@@ -5,7 +5,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
@@ -27,11 +26,9 @@ import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.model.MessageEvent;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.BaseActivity;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.home.HomeActivity;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.presenter.login.LoginActivity;
-import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.utils.DownloadImageTask;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.utils.ImageUtil;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.utils.MaskEditUtil;
 import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.web.WebProfileEdit;
-import acabouminhaluz.devapps.es.inf.ufg.br.acabouminhaluz.web.WebRegister;
 
 public class ProfileActivity extends BaseActivity {
     private String name = "";
@@ -161,15 +158,9 @@ public class ProfileActivity extends BaseActivity {
                         Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), selectedImage);
                         avatarImage.setImageBitmap(bitmap);
                         // Save in global variable
-                        this.imageBitmap = bitmap;
-                        /*
-                        AsyncTask.execute(new Runnable() {
-                            @Override
-                            public void run() {
-                                saveBitmapImage();
-                            }
-                        });
-                        */
+                        //this.imageBitmap = bitmap;
+                        //saveBitmapImage();
+
                     } catch (IOException e) {
                         Log.i("TAG", "Some exception " + e);
                     }

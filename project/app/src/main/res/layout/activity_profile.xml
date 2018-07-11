@@ -47,7 +47,9 @@
             android:orientation="vertical"
             android:paddingLeft="24dp"
             android:paddingRight="24dp"
-            android:paddingTop="5dp">
+            android:paddingTop="5dp"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -84,7 +86,7 @@
                     android:hint="@string/hint_name"
                     android:inputType="text"
                     android:textColor="@color/yellow"
-                    android:textSize="@dimen/label_size" />
+                    android:textSize="@dimen/label_size"/>
             </android.support.design.widget.TextInputLayout>
 
             <!-- CPF Label -->
