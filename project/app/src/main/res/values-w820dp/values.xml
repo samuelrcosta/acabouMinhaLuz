@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="coarse_location_permission_code">200</integer>
-    <integer name="fine_location_permission_code">201</integer>
-</resources>
